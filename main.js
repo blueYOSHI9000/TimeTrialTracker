@@ -409,10 +409,6 @@ function loadXML (file) {
 		document.getElementById('gameSelect').style.display = 'none';
 		document.getElementById('backButton').style.display = 'unset';
 		$('html,body').scrollTop(0);
-		
-		if (location.host.startsWith('localhost') != true) { //doesn't work with localhost for some reason, just doesn't
-			location.href = location.host + '/' + location.pathname + '?game=' + file;
-		}
 
 		loadTimes(data);
 		if (data.querySelector('styles') != null) {
