@@ -23,217 +23,217 @@
 		<cup name="Mushroom Cup">
 			<track name="Mario Kart Stadium">
 				<ghost type="150" name="Nin★Chris">1:53.191</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Sophia">1:21.984</ghost>
 			</track>
 			<track name="Water Park">
 				<ghost type="150" name="Nin★Massim">2:02.186</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Yuya">1:22.799</ghost>
 			</track>
 			<track name="Sweet Sweet Canyon">
 				<ghost type="150" name="Nin★Fausti">2:07.205</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Alice">1:40.972</ghost>
 			</track>
 			<track name="Thwomp Ruins">
 				<ghost type="150" name="Nin★Sophia">2:12.125</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Skip">1:31.436</ghost>
 			</track>
 		</cup>
 		<cup name="Flower Cup">
 			<track name="Mario Circuit">
 				<ghost type="150" name="Nin★Sho">2:08.501</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Joost">1:23.243</ghost>
 			</track>
 			<track name="Toad Harbor">
 				<ghost type="150" name="Nin★Alice">2:29.282</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Adrien">1:43.003</ghost>
 			</track>
 			<track name="Twisted Mansion">
 				<ghost type="150" name="Nin★Mark">2:14.615</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Rui">1:38.244</ghost>
 			</track>
 			<track name="Shy Guy Falls">
 				<ghost type="150" name="Nin★Frank">2:21.804</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Anne">1:40.698</ghost>
 			</track>
 		</cup>
 		<cup name="Star Cup">
 			<track name="Sunshine Airport">
 				<ghost type="150" name="Nin★Leonel">2:20.447</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Sho">1:45.437</ghost>
 			</track>
 			<track name="Dolphin Shoals">
 				<ghost type="150" name="Nin★Skip">2:14.832</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Polly">1:38.911</ghost>
 			</track>
 			<track name="Electrodome">
 				<ghost type="150" name="Nin★Yuya">2:21.023</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Laura">1:40.943</ghost>
 			</track>
 			<track name="Mount Wario">
 				<ghost type="150" name="Nin★Elena">2:03.483</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Massim">1:37.266</ghost>
 			</track>
 		</cup>
 		<cup name="Special Cup">
 			<track name="Cloudtop Cruise">
 				<ghost type="150" name="Nin★Maria">2:19.568</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Giulia">1:44.120</ghost>
 			</track>
 			<track name="Bone-Dry Dunes">
 				<ghost type="150" name="Nin★Elena">2:15.338</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Pavel">1:39.330</ghost>
 			</track>
 			<track name="Bowser's Castle">
 				<ghost type="150" name="Nin★Polly">2:21.980</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Mark">1:40.953</ghost>
 			</track>
 			<track name="Rainbow Road">
 				<ghost type="150" name="Nin★Mizuho">2:25.267</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Pedro">1:55.767</ghost>
 			</track>
 		</cup>
 		<cup name="Shell Cup">
 			<track name="Moo Moo Meadows">
 				<ghost type="150" name="Nin★Chris">1:41.846</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Leonel">1:09.980</ghost>
 			</track>
 			<track name="Mario Circuit">
 				<ghost type="150" name="Nin★Rie">1:44.593</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Pit">1:10.475</ghost>
 			</track>
 			<track name="Cheep Cheep Beach">
 				<ghost type="150" name="Nin★Massim">2:06.314</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Mizuho">1:25.089</ghost>
 			</track>
 			<track name="Toad's Turnpike">
 				<ghost type="150" name="Nin★Alice">2:08.966</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Rie">1:21.156</ghost>
 			</track>
 		</cup>
 		<cup name="Banana Cup">
 			<track name="Dry Dry Desert">
 				<ghost type="150" name="Nin★Maria">2:26.614</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Chris">1:45.087</ghost>
 			</track>
 			<track name="Donut Plains 3">
 				<ghost type="150" name="Nin★Frank">1:35.564</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Mizuho">1:11.794</ghost>
 			</track>
 			<track name="Royal Raceway">
 				<ghost type="150" name="Nin★Skip">2:18.307</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Dylan">1:43.120</ghost>
 			</track>
 			<track name="DK Jungle">
 				<ghost type="150" name="Nin★Rie">2:20.006</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Polly">1:46.758</ghost>
 			</track>
 		</cup>
 		<cup name="Leaf Cup">
 			<track name="Wario Stadium">
 				<ghost type="150" name="Nin★Mizuho">2:09.171</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Massim">1:39.724</ghost>
 			</track>
 			<track name="Sherbet Land">
 				<ghost type="150" name="Nin★Fausti">2:20.174</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Sophia">1:34.370</ghost>
 			</track>
 			<track name="Music Park">
 				<ghost type="150" name="Nin★Sho">2:19.675</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Mitsu">1:36.529</ghost>
 			</track>
 			<track name="Yoshi Valley">
 				<ghost type="150" name="Nin★Mark">2:23.688</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Yuya">1:35.628</ghost>
 			</track>
 		</cup>
 		<cup name="Lightning Cup">
 			<track name="Tick-Tock Clock">
 				<ghost type="150" name="Nin★Sophia">2:06.485</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Elena">1:32.483</ghost>
 			</track>
 			<track name="Piranha Plant Slide">
 				<ghost type="150" name="Nin★Polly">2:21.321</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Frank">1:48.454</ghost>
 			</track>
 			<track name="Grumble Volcano">
 				<ghost type="150" name="Nin★Yuya">2:16.524</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Maria">1:44.284</ghost>
 			</track>
 			<track name="Rainbow Road">
 				<ghost type="150" name="Nin★Leonel">1:33.981</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Fausti">1:08.128</ghost>
 			</track>
 		</cup>
 		<cup name="Egg Cup">
 			<track name="Yoshi Circuit">
 				<ghost type="150" name="Nin★Adrien">2:07.557</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Elena">1:38.869</ghost>
 			</track>
 			<track name="Excitebike Arena">
 				<ghost type="150" name="Nin★Pedro">1:58.808</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Akira">1:29.202</ghost>
 			</track>
 			<track name="Dragon Driftway">
 				<ghost type="150" name="Nin★Mitsu">2:05.957</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Aracel">1:34.873</ghost>
 			</track>
 			<track name="Mute City">
 				<ghost type="150" name="Nin★Laura">2:10.167</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Sho">1:34.273</ghost>
 			</track>
 		</cup>
 		<cup name="Triforce Cup">
 			<track name="Wario's Gold Mine">
 				<ghost type="150" name="Nin★Pit">2:22.119</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Alice">1:41.168</ghost>
 			</track>
 			<track name="Rainbow Road">
 				<ghost type="150" name="Nin★Anne">1:40.711</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Marie">1:12.762</ghost>
 			</track>
 			<track name="Ice Ice Outpost">
 				<ghost type="150" name="Nin★Pavel">2:09.427</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Juliet">1:32.435</ghost>
 			</track>
 			<track name="Hyrule Circuit">
 				<ghost type="150" name="Nin★Mitsu">2:08.616</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Mark">1:40.394</ghost>
 			</track>
 		</cup>
 		<cup name="Crossing Cup">
 			<track name="Baby Park">
 				<ghost type="150" name="Nin★Joost">1:16.561</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Leonel">0:59.765</ghost>
 			</track>
 			<track name="Cheese Land">
 				<ghost type="150" name="Nin★Aracel">2:06.316</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Chris">1:41.248</ghost>
 			</track>
 			<track name="Wild Woods">
 				<ghost type="150" name="Nin★Akira">2:05.396</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Mitsu">1:27.555</ghost>
 			</track>
 			<track name="Animal Crossing">
 				<ghost type="150" name="Nin★Marie">1:53.584</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Fausti">1:23.417</ghost>
 			</track>
 		</cup>
 		<cup name="Bell Cup">
 			<track name="Neo Bowser City">
 				<ghost type="150" name="Nin★Rui">2:13.138</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Massim">1:37.526</ghost>
 			</track>
 			<track name="Ribbon Road">
 				<ghost type="150" name="Nin★Giulia">2:07.152</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Maria">1:31.220</ghost>
 			</track>
 			<track name="Super Bell Subway">
 				<ghost type="150" name="Nin★Juliet">2:06.487</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Skip">1:23.304</ghost>
 			</track>
 			<track name="Big Blue">
 				<ghost type="150" name="Nin★Dylan">1:37.316</ghost>
-				<ghost type="200" name="xxxxx">xxxxx</ghost>
+				<ghost type="200" name="Nin★Rie">1:13.516</ghost>
 			</track>
 		</cup>
 	</game>

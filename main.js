@@ -402,7 +402,6 @@ function getUrl(variable) {
 * @param {string} file The file name (no directory & no extension)
 */
 function loadXML (file) {
-	console.log(file)
 	$.get('xml/' + file + '.xml', function(data) {
 		permXML = data; //for debugging
 
@@ -418,8 +417,8 @@ function loadXML (file) {
 	});
 }
 
-window.onload = function () {
+/*window.onload = function () {
 	if (getUrl('game') != false) {
 		loadXML(getUrl('game'));
 	}
-}
+}*/

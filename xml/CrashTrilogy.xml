@@ -99,10 +99,102 @@
 				<ghost type="platin">0:57.85</ghost>
 				<ghost type="dev" name="Stephen I.">0:51.65</ghost>
 			</track>
+			<track name="Boulder Dash">
+				<ghost type="sapphire">1:45.00</ghost>
+				<ghost type="gold">1:24.61</ghost>
+				<ghost type="platin">1:18.08</ghost>
+				<ghost type="dev" name="Stephen I.">1:15.55</ghost>
+			</track>
+			<track name="Whole Hog">
+				<ghost type="sapphire">0:48.00</ghost>
+				<ghost type="gold">0:30.44</ghost>
+				<ghost type="platin">0:26.87</ghost>
+				<ghost type="dev" name="Evan B.">0:25.82</ghost>
+			</track>
+			<track name="Sunset Vista">
+				<ghost type="sapphire">5:30.00</ghost>
+				<ghost type="gold">4:10.04</ghost>
+				<ghost type="platin">3:41.85</ghost>
+				<ghost type="dev" name="Hunter G.">3:22.26</ghost>
+			</track>
+		</cup>
+		<cup name="Corex Island">
+			<track name="Heavy Machinery">
+				<ghost type="sapphire">2:20.00</ghost>
+				<ghost type="gold">1:57.82</ghost>
+				<ghost type="platin">1:36.29</ghost>
+				<ghost type="dev" name="Hanna D.">1:28.56</ghost>
+			</track>
+			<track name="Cortex Power">
+				<ghost type="sapphire">1:05.00</ghost>
+				<ghost type="gold">0:43.98</ghost>
+				<ghost type="platin">0:39.70</ghost>
+				<ghost type="dev" name="Kevin E.">0:33.29</ghost>
+			</track>
+			<track name="Generator Room">
+				<ghost type="sapphire">1:22.00</ghost>
+				<ghost type="gold">1:08.37</ghost>
+				<ghost type="platin">0:59.72</ghost>
+				<ghost type="dev" name="Stephen I.">0:53.75</ghost>
+			</track>
+			<track name="Toxic Waste">
+				<ghost type="sapphire">1:16.00</ghost>
+				<ghost type="gold">1:03.47</ghost>
+				<ghost type="platin">0:55.75</ghost>
+				<ghost type="dev" name="Stephen I.">0:52.31</ghost>
+			</track>
+			<track name="The High Road">
+				<ghost type="sapphire">1:28.00</ghost>
+				<ghost type="gold">1:13.29</ghost>
+				<ghost type="platin">1:04.61</ghost>
+				<ghost type="dev" name="Hunter G.">1:00.42</ghost>
+			</track>
+			<track name="Slippery Climb">
+				<ghost type="sapphire">3:30.00</ghost>
+				<ghost type="gold">3:00.47</ghost>
+				<ghost type="platin">2:26.08</ghost>
+				<ghost type="dev" name="Rob A.">2:19.17</ghost>
+			</track>
+			<track name="Lights Out">
+				<ghost type="sapphire">1:31.00</ghost>
+				<ghost type="gold">1:20.67</ghost>
+				<ghost type="platin">1:06.87</ghost>
+				<ghost type="dev" name="Hanna D.">1:02.58</ghost>
+			</track>
+			<track name="Fumbling In The Dark">
+				<ghost type="sapphire">2:28.00</ghost>
+				<ghost type="gold">1:57.68</ghost>
+				<ghost type="platin">1:41.59</ghost>
+				<ghost type="dev" name="Kevin E.">1:26.94</ghost>
+			</track>
+			<track name="Jaws Of Darkness">
+				<ghost type="sapphire">2:21.00</ghost>
+				<ghost type="gold">1:59.21</ghost>
+				<ghost type="platin">1:36.26</ghost>
+				<ghost type="dev" name="Ryan S.">1:36.07</ghost>
+			</track>
+			<track name="Castle Machinery">
+				<ghost type="sapphire">3:15.00</ghost>
+				<ghost type="gold">2:37.61</ghost>
+				<ghost type="platin">2:09.89</ghost>
+				<ghost type="dev" name="Ryan S.">2:05.85</ghost>
+			</track>
+			<track name="The Lab">
+				<ghost type="sapphire">1:20.00</ghost>
+				<ghost type="gold">0:56.22</ghost>
+				<ghost type="platin">0:44.92</ghost>
+				<ghost type="dev" name="Kevin E.">0:42.70</ghost>
+			</track>
+			<track name="DLC - Stormy Ascent">
+				<ghost type="sapphire">7:00.00</ghost>
+				<ghost type="gold">4:30.00</ghost>
+				<ghost type="platin">3:10.00</ghost>
+				<ghost type="dev" name="Stephen I.">2:53.50</ghost>
+			</track>
 		</cup>
 	</game>
 	<game name="Crash Bandicoot 2: Cortex Strikes Back" src="crash2.png">
-		<cup name="Jungle">
+		<cup name="Warp Room 1 (Jungle)">
 			<track name="Turtle Woods">
 				<ghost type="sapphire">1:15.00</ghost>
 				<ghost type="gold">0:56.87</ghost>
@@ -115,13 +207,366 @@
 				<ghost type="platin">0:42.88</ghost>
 				<ghost type="dev" name="Hunter G.">0:41.88</ghost>
 			</track>
+			<track name="Hang Eight">
+				<ghost type="sapphire">1:20.00</ghost>
+				<ghost type="gold">1:02.93</ghost>
+				<ghost type="platin">0:56.24</ghost>
+				<ghost type="dev" name="Nathan J.">0:51.73</ghost>
+			</track>
+			<track name="The Pits">
+				<ghost type="sapphire">1:40.00</ghost>
+				<ghost type="gold">1:11.51</ghost>
+				<ghost type="platin">1:00.34</ghost>
+				<ghost type="dev" name="Stephen I.">0:56.34</ghost>
+			</track>
+			<track name="Crash Dash">
+				<ghost type="sapphire">1:33.00</ghost>
+				<ghost type="gold">1:07.22</ghost>
+				<ghost type="platin">0:59.68</ghost>
+				<ghost type="dev" name="Stephen I.">0:55.68</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 2 (Arctic)">
+			<track name="Snow Biz">
+				<ghost type="sapphire">1:31.00</ghost>
+				<ghost type="gold">1:09.82</ghost>
+				<ghost type="platin">0:51.97</ghost>
+				<ghost type="dev" name="Hunter G.">0:45.57</ghost>
+			</track>
+			<track name="Air Crash">
+				<ghost type="sapphire">1:27.00</ghost>
+				<ghost type="gold">1:01.01</ghost>
+				<ghost type="platin">0:52.75</ghost>
+				<ghost type="dev" name="Stephen I.">0:48.30</ghost>
+			</track>
+			<track name="Bear It">
+				<ghost type="sapphire">1:05.00</ghost>
+				<ghost type="gold">0:48.07</ghost>
+				<ghost type="platin">0:44.82</ghost>
+				<ghost type="dev" name="Rob A.">0:40.82</ghost>
+			</track>
+			<track name="Crash Crush">
+				<ghost type="sapphire">1:57.00</ghost>
+				<ghost type="gold">1:19.83</ghost>
+				<ghost type="platin">1:07.87</ghost>
+				<ghost type="dev" name="Stephen I.">1:05.56</ghost>
+			</track>
+			<track name="The Eel Deal">
+				<ghost type="sapphire">1:48.00</ghost>
+				<ghost type="gold">1:08.46</ghost>
+				<ghost type="platin">0:58.90</ghost>
+				<ghost type="dev" name="Stephen I.">0:47.29</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 3 (Sewers)">
+			<track name="Plant Food">
+				<ghost type="sapphire">1:59.00</ghost>
+				<ghost type="gold">1:03.31</ghost>
+				<ghost type="platin">0:57.28</ghost>
+				<ghost type="dev" name="Stephen I.">0:52.58</ghost>
+			</track>
+			<track name="Sewer Or Later">
+				<ghost type="sapphire">1:04.00</ghost>
+				<ghost type="gold">0:41.29</ghost>
+				<ghost type="platin">0:34.00</ghost>
+				<ghost type="dev" name="Jake R.">0:31.96</ghost>
+			</track>
+			<track name="Bear Down">
+				<ghost type="sapphire">1:03.00</ghost>
+				<ghost type="gold">0:49.85</ghost>
+				<ghost type="platin">0:46.14</ghost>
+				<ghost type="dev" name="Rob A.">0:39.78</ghost>
+			</track>
+			<track name="Road To Ruin">
+				<ghost type="sapphire">1:13.00</ghost>
+				<ghost type="gold">0:51.78</ghost>
+				<ghost type="platin">0:39.04</ghost>
+				<ghost type="dev" name="Kevin E.">0:30.60</ghost>
+			</track>
+			<track name="Un-Bearable">
+				<ghost type="sapphire">2:24.00</ghost>
+				<ghost type="gold">1:35.53</ghost>
+				<ghost type="platin">1:26.10</ghost>
+				<ghost type="dev" name="Hanna D.">1:22.00</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 4 (Mountains)">
+			<track name="Hangin' Out">
+				<ghost type="sapphire">1:25.00</ghost>
+				<ghost type="gold">1:03.82</ghost>
+				<ghost type="platin">0:56.23</ghost>
+				<ghost type="dev" name="Stephen I.">0:53.52</ghost>
+			</track>
+			<track name="Diggin' It">
+				<ghost type="sapphire">2:40.00</ghost>
+				<ghost type="gold">1:48.12</ghost>
+				<ghost type="platin">1:36.77</ghost>
+				<ghost type="dev" name="Kevin E.">1:17.69</ghost>
+			</track>
+			<track name="Cold Hard Crash">
+				<ghost type="sapphire">2:36.00</ghost>
+				<ghost type="gold">2:06.07</ghost>
+				<ghost type="platin">1:35.99</ghost>
+				<ghost type="dev" name="Ryan S.">1:29.03</ghost>
+			</track>
+			<track name="Ruination">
+				<ghost type="sapphire">1:58.00</ghost>
+				<ghost type="gold">1:19.36</ghost>
+				<ghost type="platin">1:04.36</ghost>
+				<ghost type="dev" name="Scott H.">0:55.52</ghost>
+			</track>
+			<track name="Bee-Having">
+				<ghost type="sapphire">2:00.00</ghost>
+				<ghost type="gold">1:22.00</ghost>
+				<ghost type="platin">1:13.42</ghost>
+				<ghost type="dev" name="Kevin E.">1:10.42</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 5 (Space)">
+			<track name="Piston It Away">
+				<ghost type="sapphire">1:57.00</ghost>
+				<ghost type="gold">1:23.33</ghost>
+				<ghost type="platin">1:16.03</ghost>
+				<ghost type="dev" name="Hunter G.">1:13.03</ghost>
+			</track>
+			<track name="Rock It">
+				<ghost type="sapphire">1:15.00</ghost>
+				<ghost type="gold">0:59.55</ghost>
+				<ghost type="platin">0:53.44</ghost>
+				<ghost type="dev" name="Hanna D.">0:46.60</ghost>
+			</track>
+			<track name="Night Fight">
+				<ghost type="sapphire">1:45.00</ghost>
+				<ghost type="gold">1:10.98</ghost>
+				<ghost type="platin">1:04.19</ghost>
+				<ghost type="dev" name="Scott H.">1:02.25</ghost>
+			</track>
+			<track name="Pack Attack">
+				<ghost type="sapphire">1:22.00</ghost>
+				<ghost type="gold">1:08.29</ghost>
+				<ghost type="platin">0:58.25</ghost>
+				<ghost type="dev" name="Hunter G.">0:57.25</ghost>
+			</track>
+			<track name="Spaced Out">
+				<ghost type="sapphire">2:03.00</ghost>
+				<ghost type="gold">1:09.24</ghost>
+				<ghost type="platin">0:56.95</ghost>
+				<ghost type="dev" name="Hunter G.">0:52.81</ghost>
+			</track>
+		</cup>
+		<cup name="Secret Levels (Warp 0)">
+			<track name="Totally Bear">
+				<ghost type="sapphire">0:58.00</ghost>
+				<ghost type="gold">0:47.36</ghost>
+				<ghost type="platin">0:41.63</ghost>
+				<ghost type="dev" name="Rob A.">0:36.63</ghost>
+			</track>
+			<track name="Totally Fly">
+				<ghost type="sapphire">1:21.00</ghost>
+				<ghost type="gold">1:02.08</ghost>
+				<ghost type="platin">0:54.75</ghost>
+				<ghost type="dev" name="Kevin E.">0:52.81</ghost>
+			</track>
+		</cup>
+	</game>
+	<game name="Crash Bandicoot 3: Warped" src="crash3.png">
+		<cup name="Warp Room 1 (Medieval)">
+			<track name="Toad Village">
+				<ghost type="sapphire">1:03.00</ghost>
+				<ghost type="gold">0:57.50</ghost>
+				<ghost type="platin">0:44.03</ghost>
+				<ghost type="dev" name="Josh T.">0:39.83</ghost>
+			</track>
+			<track name="Under Pressure">
+				<ghost type="sapphire">1:39.00</ghost>
+				<ghost type="gold">1:10.90</ghost>
+				<ghost type="platin">1:03.50</ghost>
+				<ghost type="dev" name="Josh T.">1:01.59</ghost>
+			</track>
+			<track name="Orient Express">
+				<ghost type="sapphire">0:41.00</ghost>
+				<ghost type="gold">0:41.00</ghost>
+				<ghost type="platin">0:18.10</ghost>
+				<ghost type="dev" name="Kevin E.">0:12.06</ghost>
+			</track>
+			<track name="Bone Yard">
+				<ghost type="sapphire">1:45.00</ghost>
+				<ghost type="gold">1:40.20</ghost>
+				<ghost type="platin">1:21.00</ghost>
+				<ghost type="dev" name="Josh T.">1:14.61</ghost>
+			</track>
+			<track name="Makin' Waves">
+				<ghost type="sapphire">1:11.00</ghost>
+				<ghost type="gold">1:03.23</ghost>
+				<ghost type="platin">0:56.23</ghost>
+				<ghost type="dev" name="Chris J.">0:55.05</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 2 (Arabia)">
+			<track name="Gee Wiz">
+				<ghost type="sapphire">1:35.00</ghost>
+				<ghost type="gold">1:22.73</ghost>
+				<ghost type="platin">1:05.90</ghost>
+				<ghost type="dev" name="Hunter G.">1:02.15</ghost>
+			</track>
+			<track name="Hang'em High">
+				<ghost type="sapphire">1:24.00</ghost>
+				<ghost type="gold">0:52.63</ghost>
+				<ghost type="platin">0:43.80</ghost>
+				<ghost type="dev" name="Hunter G.">0:39.68</ghost>
+			</track>
+			<track name="Hog Ride">
+				<ghost type="sapphire">0:48.00</ghost>
+				<ghost type="gold">0:44.43</ghost>
+				<ghost type="platin">0:38.06</ghost>
+				<ghost type="dev" name="Kevin E.">0:36.43</ghost>
+			</track>
+			<track name="Tomb Time">
+				<ghost type="sapphire">1:42.00</ghost>
+				<ghost type="gold">1:10.00</ghost>
+				<ghost type="platin">0:53.90</ghost>
+				<ghost type="dev" name="Dan T.">0:53.36</ghost>
+			</track>
+			<track name="Midnight Run">
+				<ghost type="sapphire">0:51.00</ghost>
+				<ghost type="gold">0:38.23</ghost>
+				<ghost type="platin">0:18.20</ghost>
+				<ghost type="dev" name="Kevin E.">0:14.03</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 3 (China)">
+			<track name="Dino Might!">
+				<ghost type="sapphire">1:34.00</ghost>
+				<ghost type="gold">1:25.76</ghost>
+				<ghost type="platin">1:03.00</ghost>
+				<ghost type="dev" name="Josh T.">0:58.14</ghost>
+			</track>
+			<track name="Deep Trouble">
+				<ghost type="sapphire">1:37.00</ghost>
+				<ghost type="gold">1:15.12</ghost>
+				<ghost type="platin">1:08.33</ghost>
+				<ghost type="dev" name="Hunter G.">1:05.00</ghost>
+			</track>
+			<track name="High Time">
+				<ghost type="sapphire">2:12.00</ghost>
+				<ghost type="gold">1:04.10</ghost>
+				<ghost type="platin">0:56.93</ghost>
+				<ghost type="dev" name="Hunter G.">0:48.26</ghost>
+			</track>
+			<track name="Road Crash">
+				<ghost type="sapphire">1:31.00</ghost>
+				<ghost type="gold">1:26.70</ghost>
+				<ghost type="platin">1:23.10</ghost>
+				<ghost type="dev" name="Kevin E.">1:20.21</ghost>
+			</track>
+			<track name="Double Header">
+				<ghost type="sapphire">1:27.00</ghost>
+				<ghost type="gold">1:21.12</ghost>
+				<ghost type="platin">0:59.40</ghost>
+				<ghost type="dev" name="Stephen I.">0:55.23</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 4 (Egypt)">
+			<track name="Sphynxinator">
+				<ghost type="sapphire">1:42.00</ghost>
+				<ghost type="gold">1:22.63</ghost>
+				<ghost type="platin">0:56.70</ghost>
+				<ghost type="dev" name="Dan T.">0:53.43</ghost>
+			</track>
+			<track name="Bye Bye Blimps">
+				<ghost type="sapphire">0:49.00</ghost>
+				<ghost type="gold">0:38.40</ghost>
+				<ghost type="platin">0:31.50</ghost>
+				<ghost type="dev" name="Dan R.">0:25.69</ghost>
+			</track>
+			<track name="Tell No Tales">
+				<ghost type="sapphire">2:12.00</ghost>
+				<ghost type="gold">1:35.63</ghost>
+				<ghost type="platin">1:15.23</ghost>
+				<ghost type="dev" name="Kevin E.">1:12.80</ghost>
+			</track>
+			<track name="Future Frenzy">
+				<ghost type="sapphire">2:01.00</ghost>
+				<ghost type="gold">1:34.00</ghost>
+				<ghost type="platin">1:19.62</ghost>
+				<ghost type="dev" name="Dan T.">1:08.00</ghost>
+			</track>
+			<track name="Tomb Wader">
+				<ghost type="sapphire">2:44.00</ghost>
+				<ghost type="gold">1:45.03</ghost>
+				<ghost type="platin">1:24.00</ghost>
+				<ghost type="dev" name="Kevin E.">1:16.51</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 5 (Future)">
+			<track name="Gone Tomorrow">
+				<ghost type="sapphire">2:05.00</ghost>
+				<ghost type="gold">1:25.60</ghost>
+				<ghost type="platin">1:02.10</ghost>
+				<ghost type="dev" name="Kevin E.">0:58.70</ghost>
+			</track>
+			<track name="Orange Asphalt">
+				<ghost type="sapphire">1:38.00</ghost>
+				<ghost type="gold">1:33.30</ghost>
+				<ghost type="platin">1:23.80</ghost>
+				<ghost type="dev" name="Hunter G.">1:18.68</ghost>
+			</track>
+			<track name="Flaming Passion">
+				<ghost type="sapphire">1:43.00</ghost>
+				<ghost type="gold">1:13.10</ghost>
+				<ghost type="platin">0:59.40</ghost>
+				<ghost type="dev" name="Hunter G.">0:53.81</ghost>
+			</track>
+			<track name="Mad Bombers">
+				<ghost type="sapphire">2:18.00</ghost>
+				<ghost type="gold">1:15.23</ghost>
+				<ghost type="platin">0:58.13</ghost>
+				<ghost type="dev" name="Chris J.">0:42.50</ghost>
+			</track>
+			<track name="Bug Lite">
+				<ghost type="sapphire">1:49.00</ghost>
+				<ghost type="gold">1:34.86</ghost>
+				<ghost type="platin">1:14.90</ghost>
+				<ghost type="dev" name="Dan T.">1:12.90</ghost>
+			</track>
+		</cup>
+		<cup name="Warp Room 6 (Neo-Cor Systems)">
+			<track name="Ski Crazed">
+				<ghost type="sapphire">1:19.00</ghost>
+				<ghost type="gold">0:53.50</ghost>
+				<ghost type="platin">0:36.30</ghost>
+				<ghost type="dev" name="Kevin E.">0:32.06</ghost>
+			</track>
+			<track name="Area 51?">
+				<ghost type="sapphire">2:01.00</ghost>
+				<ghost type="gold">1:57.80</ghost>
+				<ghost type="platin">1:52.50</ghost>
+				<ghost type="dev" name="Kevin E.">1:48.40</ghost>
+			</track>
+			<track name="Rings of Power">
+				<ghost type="sapphire">1:30.00</ghost>
+				<ghost type="gold">1:11.46</ghost>
+				<ghost type="platin">1:01.73</ghost>
+				<ghost type="dev" name="0:57.42">Chris J.</ghost>
+			</track>
+			<track name="Hot Coco">
+				<ghost type="sapphire">1:00.00</ghost>
+				<ghost type="gold">0:30.10</ghost>
+				<ghost type="platin">0:19.96</ghost>
+				<ghost type="dev" name="Kevin E.">0:12.87</ghost>
+			</track>
+			<track name="Eggipus Rex">
+				<ghost type="sapphire">0:59.00</ghost>
+				<ghost type="gold">0:53.01</ghost>
+				<ghost type="platin">0:47.74</ghost>
+				<ghost type="dev" name="Naney A.">0:45.57</ghost>
+			</track>
+			<track name="DLC - Future Tense">
+				<ghost type="sapphire">2:01.52</ghost>
+				<ghost type="gold">1:15.43</ghost>
+				<ghost type="platin">0:52.17</ghost>
+				<ghost type="dev" name="Stephen I.">0:41.26</ghost>
+			</track>
 		</cup>
 	</game>
 </timetrial>
-
-		<!--track name="">
-			<ghost type="sapphire"></ghost>
-			<ghost type="gold"></ghost>
-			<ghost type="platin"></ghost>
-			<ghost type="dev" name=""></ghost>
-		</track-->
