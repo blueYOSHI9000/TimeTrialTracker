@@ -411,7 +411,7 @@ function loadXML (file) {
 		$('html,body').scrollTop(0);
 		
 		if (location.host.startsWith('localhost') != true) { //doesn't work with localhost for some reason, just doesn't
-			window.history.replaceState({}, document.title, "/" + location.host + '/' + file);
+			window.history.pushState({}, document.title, location.host + '/' + location.pathname + '?game=' + file);
 		}
 
 		loadTimes(data);
