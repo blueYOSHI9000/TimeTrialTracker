@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Time Trial Tracker</title>
+	<meta name="description" content="A dumb test site.">
+	<meta name="author" content="blueYOSHI9000">
+	<meta name="robots" content="noodp,noydir" />
+
+
+	<!--meta property="og:type" content="website">
+	<meta property="og:title" content="Mario Party Overlay">
+	<meta property="og:description" content="An extensive and easy to use 'Bonus Star' tracker for all Mario Party games!">
+	<meta property="og:image" content="https://raw.githubusercontent.com/blueYOSHI9000/MarioPartyOverlay/master/img/stars.png">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:url" content="https://blueyoshi9000.github.io/MarioPartyOverlay/">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@yoshisrc">
+	<meta name="twitter:creator" content="@yoshisrc">
+	<meta name="twitter:description" content="An extensive and easy to use 'Bonus Star' tracker for all Mario Party games!">
+	<meta name="twitter:title" content="Mario Party Overlay">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/blueYOSHI9000/MarioPartyOverlay/master/img/stars.png">
+
+	<meta name="google-site-verification" content="L7wGU_sd9ri9CM2r9zhWhwq2pLkPtuemouRzyRFudC8" /-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+	<link id="dynamic-favicon" rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" href="bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="mainContainer">
+		<div id="gameSelect">
+			<h2 style="text-align: center;">What is Time Trial Tracker?</h2>
+			<div style="text-align: center;">
+				Many games have a Time Trial mode with pre-determined times to beat, Time Trial Tracker aims to create a database with all those times in an easy to read table, even if the games don't actually show those times on their own.
+			</div>
+			<h2 style="text-align: center;">Select a game</h2>
+			<div id="imgSelectContainer">
+
+
+
+				<!-- === ENTER GAME HERE === -->
+
+				<img src="xml/CrashTrilogy/logo.png" onclick="loadXML('CrashTrilogy')" alt="Crash Bandicoot N. Sane Trilogy" title="Crash Bandicoot N. Sane Trilogy">
+				<img src="xml/MK8D/logo.png" onclick="loadXML('MK8D')" alt="Mario Kart 8 Deluxe" title="Mario Kart 8 Deluxe">
+
+				<!-- ====== -->
+
+
+
+			</div>
+		</div>
+		<div id="timetrials">
+		</div>
+		<button id="backButton" onclick="location = '/index.html';">Game Select</button>
+	</div>
+	<script src="main.js"></script>
+</body>

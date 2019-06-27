@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timetrial version="0">
+	<metadata>
+		<title short="CrashTrilogy">Crash Bandicoot N. Sane Trilogy</title>
+		<logo src="logo.png" />
+		<columns>
+			<column name="track">Level</column>
+			<column name="time" type="sapphire">Sapphire</column>
+			<column name="time" type="gold">Gold</column>
+			<column name="time" type="platin">Platinum</column>
+			<column name="time" type="dev">Dev Time</column>
+			<column name="name" type="dev">Dev Name</column>
+		</columns>
+		<styles>
+			<favicon src="wumpafruit.png" />
+			<background img="bg.jpg" />
+			<frontbg style="linear-gradient(#d46100, #d43e00)" />
+			<textcolor title="#f9e52c" link="#f9e52c" linkhover="#f9aa2c" />
+		</styles>
+		<credits>
+			<times name="CrashRatchet008" url="https://twitter.com/CrashRatchet008" source="https://docs.google.com/spreadsheets/d/1qXiCwTyVdOsB8yBs-T9lZBTsx9iY8R_GurFtYAOjeLE/edit#gid=0" />
+			<creator name="blueYOSHI9000" />
+			<background official="true" />
+		</credits>
+	</metadata>
+	<game name="Crash Bandicoot" src="crash1.png">
+		<cup name="N. Sanity Island">
+			<track name="N. Sanity Beach">
+				<ghost type="sapphire">0:34.00</ghost>
+				<ghost type="gold">0:28.26</ghost>
+				<ghost type="platin">0:25.76</ghost>
+				<ghost type="dev" name="Stephen I.">0:22.98</ghost>
+			</track>
+			<track name="Jungle Rollers">
+				<ghost type="sapphire">1:03.00</ghost>
+				<ghost type="gold">0:48.12</ghost>
+				<ghost type="platin">0:46.89</ghost>
+				<ghost type="dev" name="Stephen I.">0:42.16</ghost>
+			</track>
+			<track name="The Great Gate">
+				<ghost type="sapphire">1:05.00</ghost>
+				<ghost type="gold">0:53.29</ghost>
+				<ghost type="platin">0:48.07</ghost>
+				<ghost type="dev" name="Nathan J.">0:43.67</ghost>
+			</track>
+			<track name="Boulders">
+				<ghost type="sapphire">1:04.00</ghost>
+				<ghost type="gold">0:49.44</ghost>
+				<ghost type="platin">0:47.48</ghost>
+				<ghost type="dev" name="Dan T.">0:46.11</ghost>
+			</track>
+			<track name="Upstream">
+				<ghost type="sapphire">1:03.00</ghost>
+				<ghost type="gold">0:49.95</ghost>
+				<ghost type="platin">0:46.51</ghost>
+				<ghost type="dev" name="Dan T.">0:44.21</ghost>
+			</track>
+			<track name="Rolling Stones">
+				<ghost type="sapphire">1:04.00</ghost>
+				<ghost type="gold">0:50.35</ghost>
+				<ghost type="platin">0:46.49</ghost>
+				<ghost type="dev" name="Stephen I.">0:41.67</ghost>
+			</track>
+			<track name="Hog Wild">
+				<ghost type="sapphire">0:55.00</ghost>
+				<ghost type="gold">0:47.53</ghost>
+				<ghost type="platin">0:43.42</ghost>
+				<ghost type="dev" name="Russ M.">0:41.33</ghost>
+			</track>
+			<track name="Native Fortress">
+				<ghost type="sapphire">2:55.00</ghost>
+				<ghost type="gold">2:25.87</ghost>
+				<ghost type="platin">2:05.80</ghost>
+				<ghost type="dev" name="Hunter G.">1:57.29</ghost>
+			</track>
+		</cup>
+		<cup name="Wumpa Island">
+			<track name="Up The Creek">
+				<ghost type="sapphire">1:42.00</ghost>
+				<ghost type="gold">1:20.25</ghost>
+				<ghost type="platin">1:16.31</ghost>
+				<ghost type="dev" name="Stephen I.">1:12.64</ghost>
+			</track>
+			<track name="The Lost City">
+				<ghost type="sapphire">2:35.00</ghost>
+				<ghost type="gold">1:56.12</ghost>
+				<ghost type="platin">1:40.52</ghost>
+				<ghost type="dev" name="Hunter G.">1:36.70</ghost>
+			</track>
+			<track name="Temple Ruins">
+				<ghost type="sapphire">2:11.00</ghost>
+				<ghost type="gold">1:32.61</ghost>
+				<ghost type="platin">1:25.34</ghost>
+				<ghost type="dev" name="Hanna D.">1:19.04</ghost>
+			</track>
+			<track name="Road To Nowhere">
+				<ghost type="sapphire">1:24.00</ghost>
+				<ghost type="gold">1:03.26</ghost>
+				<ghost type="platin">0:57.85</ghost>
+				<ghost type="dev" name="Stephen I.">0:51.65</ghost>
+			</track>
+		</cup>
+	</game>
+	<game name="Crash Bandicoot 2: Cortex Strikes Back" src="crash2.png">
+		<cup name="Jungle">
+			<track name="Turtle Woods">
+				<ghost type="sapphire">1:15.00</ghost>
+				<ghost type="gold">0:56.87</ghost>
+				<ghost type="platin">0:45.47</ghost>
+				<ghost type="dev" name="Stephen I.">0:42:35</ghost>
+			</track>
+			<track name="Snow Go">
+				<ghost type="sapphire">1:10.00</ghost>
+				<ghost type="gold">0:49.64</ghost>
+				<ghost type="platin">0:42.88</ghost>
+				<ghost type="dev" name="Hunter G.">0:41.88</ghost>
+			</track>
+		</cup>
+	</game>
+</timetrial>
+
+		<!--track name="">
+			<ghost type="sapphire"></ghost>
+			<ghost type="gold"></ghost>
+			<ghost type="platin"></ghost>
+			<ghost type="dev" name=""></ghost>
+		</track-->
