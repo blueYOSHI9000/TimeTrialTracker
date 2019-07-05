@@ -54,9 +54,6 @@ a:hover {
 		border-left: 2px solid #d8d8d880;
 		border-right: 2px solid #d8d8d880;
 	}
-	.flexColumn span {
-		height: 100px;
-	}
 }
 
 #imgSelectContainer {
