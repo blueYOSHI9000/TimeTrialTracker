@@ -405,6 +405,9 @@ function loadXML (file) {
 	$.get('xml/' + file + '.xml', function(data) {
 		permXML = data; //for debugging
 
+		var stateObj = {};
+		history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
+
 		document.getElementById('gameSelect').style.display = 'none';
 		document.getElementById('backButton').style.display = 'unset';
 		$('html,body').scrollTop(0);
@@ -417,8 +420,13 @@ function loadXML (file) {
 	});
 }
 
-/*window.onload = function () {
+window.onload = function () {
 	if (getUrl('game') != false) {
 		loadXML(getUrl('game'));
 	}
-}*/
+	//var url = location.pathname.split('/'); //for paths instead of url variables
+	//loadXML(url[url.length - 1]);
+}
+window.onpopstate = function(event) {
+	location = location;
+};
