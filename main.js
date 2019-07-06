@@ -259,43 +259,54 @@ function loadCredits (xml) {
 	var creator = xml.querySelectorAll('credits creator')
 	var other = xml.querySelectorAll('credits other')
 
+		
 	if (times[0] != null) {
 		var elem = cElem('span', 'timetrials');
 		var arr = [];
-		for (let num = 0; num < times.length; num++) {
-			if (times[num].getAttribute('source') != null && times[num].getAttribute('url') != null) {
-				arr.push('<a href="' + times[num].getAttribute('url') + '" rel="noopener" target="_blank"> ' + times[num].getAttribute('name') + '</a>' + ' (<a href="' + times[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
+		if (times[0].getAttribute('custom') != null) {
+			elem.innerHTML = times[0].getAttribute('custom') + '<br>';
+		} else {
+			for (let num = 0; num < times.length; num++) {
+				if (times[num].getAttribute('source') != null && times[num].getAttribute('url') != null) {
+					arr.push('<a href="' + times[num].getAttribute('url') + '" rel="noopener" target="_blank"> ' + times[num].getAttribute('name') + '</a>' + ' (<a href="' + times[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
 
-			} else if (times[num].getAttribute('source') != null) {
-				arr.push(times[num].getAttribute('name') + ' (<a href="' + times[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
+				} else if (times[num].getAttribute('source') != null) {
+					arr.push(times[num].getAttribute('name') + ' (<a href="' + times[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
 
-			} else if (times[num].getAttribute('url') != null) {
-				arr.push('<a href="' + times[num].getAttribute('url') + '" rel="noopener" target="_blank"> ' + times[num].getAttribute('name') + '</a>');
+				} else if (times[num].getAttribute('url') != null) {
+					arr.push('<a href="' + times[num].getAttribute('url') + '" rel="noopener" target="_blank"> ' + times[num].getAttribute('name') + '</a>');
 
-			} else {
-				arr.push(times[num].getAttribute('name'));
+				} else {
+					arr.push(times[num].getAttribute('name'));
+				}
 			}
+			elem.innerHTML = 'Times gathered by: ' + arr.join(', ') + ' <br>';
 		}
-		elem.innerHTML = 'Times gathered by: ' + arr.join(', ') + ' <br>';
 	}
 
 	if (creator[0] != null) {
 		var elem = cElem('span', 'timetrials');
 		var arr = [];
-		for (let num = 0; num < creator.length; num++) {
-			if (creator[num].getAttribute('url') != null) {
-				arr.push('<a href="' + creator[num].getAttribute('url') + '" rel="noopener" target="_blank">' + creator[num].getAttribute('name') + '</a>');
-			} else {
-				arr.push(creator[num].getAttribute('name'));
+		if (creator[0].getAttribute('custom') != null) {
+			elem.innerHTML = creator[0].getAttribute('custom') + '<br>';
+		} else {
+			for (let num = 0; num < creator.length; num++) {
+				if (creator[num].getAttribute('url') != null) {
+					arr.push('<a href="' + creator[num].getAttribute('url') + '" rel="noopener" target="_blank">' + creator[num].getAttribute('name') + '</a>');
+				} else {
+					arr.push(creator[num].getAttribute('name'));
+				}
 			}
+			elem.innerHTML = 'Leaderboard created by: ' + arr.join(', ') + ' <br>';
 		}
-		elem.innerHTML = 'Leaderboard created by: ' + arr.join(', ') + ' <br>';
 	}
 
 	if (background[0] != null) {
 		var elem = cElem('span', 'timetrials');
 		if (background[0].getAttribute('official') != null) {
 			elem.innerHTML = 'Background is official artwork. <br>';
+		} else if (background[0].getAttribute('custom') != null) {
+			elem.innerHTML = background[0].getAttribute('custom') + '<br>';
 		} else {
 			var arr = [];
 			for (let num = 0; num < background.length; num++) {
@@ -320,6 +331,8 @@ function loadCredits (xml) {
 		var elem = cElem('span', 'timetrials');
 		if (frontbg[0].getAttribute('official') != null) {
 			elem.innerHTML = 'Background is official artwork. <br>';
+		} else if (frontbg[0].getAttribute('custom') != null) {
+			elem.innerHTML = frontbg[0].getAttribute('custom') + '<br>';
 		} else {
 			var arr = [];
 			for (let num = 0; num < frontbg.length; num++) {
@@ -343,18 +356,22 @@ function loadCredits (xml) {
 	if (font[0] != null) {
 		var elem = cElem('span', 'timetrials');
 		var arr = [];
-		for (let num = 0; num < font.length; num++) {
-			if (font[num].getAttribute('name') != null && font[num].getAttribute('url') != null) {
-				arr.push('<a href="' + font[num].getAttribute('url') + '" rel="noopener" target="_blank"> ' + font[num].getAttribute('name') + '</a>' + ' (<a href="' + font[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
+		if (font[0].getAttribute('custom') != null) {
+			elem.innerHTML = font[0].getAttribute('custom') + '<br>';
+		} else {
+			for (let num = 0; num < font.length; num++) {
+				if (font[num].getAttribute('name') != null && font[num].getAttribute('url') != null) {
+					arr.push('<a href="' + font[num].getAttribute('url') + '" rel="noopener" target="_blank"> ' + font[num].getAttribute('name') + '</a>' + ' (<a href="' + font[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
 
-			} else if (font[num].getAttribute('name') != null) {
-				arr.push(font[num].getAttribute('name') + ' (<a href="' + font[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
+				} else if (font[num].getAttribute('name') != null) {
+					arr.push(font[num].getAttribute('name') + ' (<a href="' + font[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>)');
 
-			} else {
-				arr.push('<a href="' + font[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>');
+				} else {
+					arr.push('<a href="' + font[num].getAttribute('source') + '" rel="noopener" target="_blank">Source</a>');
+				}
 			}
+			elem.innerHTML = 'Times gathered by: ' + arr.join(', ') + ' <br>';
 		}
-		elem.innerHTML = 'Times gathered by: ' + arr.join(', ') + ' <br>';
 	}
 
 	if (other[0] != null) {
@@ -448,7 +465,7 @@ function loadXML (file) {
 		loadStyles(data);
 		loadCredits(data);
 
-		if (lHash != '') {
+		if (lHash != '' && lHash != undefined) {
 			document.getElementById(lHash).scrollIntoView();
 			location.hash = lHash;
 		}
