@@ -16,6 +16,7 @@ function loadTimes (xml) {
 		var curGame = xml.querySelectorAll('game:nth-of-type(' + num1 + ')')[0];
 
 		var elem = cElem('h2', 'timetrials');
+		elem.id = curGame.getAttribute('name').replace(/ /g,"_");
 		if (curGame.getAttribute('src') != null) {
 			if (curGame.getAttribute('replace') != null) {
 				elem.innerHTML = '<img src="xml/' + titleShort + '/' + curGame.getAttribute('src') + '" class="gameImg" alt="' + curGame.getAttribute('name') + '" title="' + curGame.getAttribute('name') + '">';
@@ -25,12 +26,21 @@ function loadTimes (xml) {
 		} else {
 			elem.innerHTML = curGame.getAttribute('name');
 		}
+		var elem = cElem('li', 'contents');
+		elem.innerHTML = '<a href="#' + curGame.getAttribute('name').replace(/ /g,"_") + '">' + curGame.getAttribute('name') + '</a>';
+
+		var curGameOl = cElem('ol', elem);
 
 		var cups = xml.querySelectorAll('game:nth-of-type(' + num1 + ') cup');
 
 		for (let num2 = 0; num2 < cups.length; num2++) { //cup loop
 			var elem = cElem('h3', 'timetrials');
+			elem.id = cups[num2].getAttribute('name').replace(/ /g,"_");
 			elem.innerHTML = cups[num2].getAttribute('name');
+
+			var elem = cElem('li', curGameOl);
+			elem.innerHTML = '<a href="#' + cups[num2].getAttribute('name').replace(/ /g,"_") + '">' + cups[num2].getAttribute('name') + '</a>';
+			elem.classList.add('contentsMargin');
 
 			var row = cElem('div', 'timetrials');
 			row.setAttribute('class', 'flexRow');
@@ -103,6 +113,7 @@ function loadTimes (xml) {
 function loadStyles (xml) {
 	var titleShort = xml.querySelector('title').getAttribute('short');
 	document.title = xml.querySelector('title').innerHTML + ' - Time Trial Tracker';
+
 	if (xml.querySelector('favicon') != null) {
 		var link = document.createElement('link'),
 		oldLink = document.getElementById('dynamic-favicon');
@@ -236,6 +247,10 @@ function loadStyles (xml) {
 function loadCredits (xml) {
 	var elem = cElem('h2', 'timetrials');
 	elem.innerHTML = 'Credits';
+	elem.id = "timetrialcredits"; //in case a game/cup is called credits
+
+	var elem = cElem('li', 'contents');
+	elem.innerHTML = '<a href="#timetrialcredits"> Credits </a>';
 
 	var times = xml.querySelectorAll('credits times')
 	var background = xml.querySelectorAll('credits background')
@@ -382,6 +397,21 @@ function cElem (type, parent) {
 }
 
 /*
+* Toggles table of contents visibility.
+*/
+function toggleContents () {
+	if (document.getElementById('contents').style.display === '') {
+		document.getElementById('contents').style.display = 'unset';
+		document.getElementById('contentsShow').innerHTML = 'Hide';
+		document.getElementById('contentsTitle').style.borderColor = '#a9a9a963';
+	} else {
+		document.getElementById('contents').style.display = '';
+		document.getElementById('contentsShow').innerHTML = 'Show';
+		document.getElementById('contentsTitle').style.borderColor = 'transparent';
+	}
+}
+
+/*
 * Gets variable from URL and returns it, returns false if it doesn't exist.
 * 
 * @param {string} variable The variable it should get.
@@ -410,23 +440,27 @@ function loadXML (file) {
 
 		document.getElementById('gameSelect').style.display = 'none';
 		document.getElementById('backButton').style.display = 'unset';
+
+		document.getElementById('contentsContainer').style.display = 'inline-block';
 		$('html,body').scrollTop(0);
 
 		loadTimes(data);
-		if (data.querySelector('styles') != null) {
-			loadStyles(data);
-		}
+		loadStyles(data);
 		loadCredits(data);
+
+		if (lHash != '') {
+			document.getElementById(lHash).scrollIntoView();
+			location.hash = lHash;
+		}
 	});
 }
 
+var lHash;
 window.onload = function () {
 	if (getUrl('game') != false) {
 		loadXML(getUrl('game'));
 	}
-	//var url = location.pathname.split('/'); //for paths instead of url variables
-	//loadXML(url[url.length - 1]);
+	if (location.hash != '') {
+		lHash = location.hash.substring(1);
+	}
 }
-window.onpopstate = function(event) {
-	location = location;
-};

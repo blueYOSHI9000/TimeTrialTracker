@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 
 	<title>Time Trial Tracker</title>
-	<meta name="description" content="A dumb test site.">
+	<meta name="description" content="A collection of in-game time trial ghosts.">
 	<meta name="author" content="blueYOSHI9000">
 	<meta name="robots" content="noodp,noydir" />
 
@@ -60,9 +60,16 @@
 
 			</div>
 		</div>
+		<span id="contentsContainer">
+			<div id="contentsTitle">
+				Contents [<a id="contentsShow" onclick="toggleContents()">Show</a>]
+			</div>
+			<ol id="contents">
+			</ol>
+		</span>
 		<div id="timetrials">
 		</div>
-		<button id="backButton" onclick="location = location.href.substring(0, location.href.indexOf('?'));">Game Select</button>
+		<button id="backButton" onclick="location.hash = ''; location.search = '';">Game Select</button>
 	</div>
 	<script src="main.js"></script>
 </body>
