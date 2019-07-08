@@ -73,8 +73,22 @@ function loadTimes (xml) {
 							var result = undefined;
 							for (let num5 = 0; num5 < types.length; num5++) {
 								if (types[num5].getAttribute('type') === curC.getAttribute('type')) {
-									result = types[num5].innerHTML;
+									if (types[num5].innerHTML == '') {
+										break;
+									} else {
+										result = types[num5].innerHTML;
+									}
 									break;
+								}
+							}
+							if (result === undefined) {
+								var typeEmpty = xml.querySelector('column[name="time"][type="' + curC.getAttribute('type') + '"]').getAttribute('empty');
+								if (typeEmpty != null) {
+									result = typeEmpty;
+								} else if (xml.querySelector('empty') != null && xml.querySelector('empty').innerHTML != null) {
+									result = xml.querySelector('empty').innerHTML;
+								} else {
+									result = 'N/A';
 								}
 							}
 							elem.innerHTML = result;

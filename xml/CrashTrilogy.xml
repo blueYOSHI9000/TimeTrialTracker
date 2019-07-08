@@ -26,7 +26,6 @@
 	<game name="Crash Bandicoot" src="crash1.png">
 		<cup name="N. Sanity Island">
 			<track name="N. Sanity Beach">
-				<ghost type="sapphire">0:34.00</ghost>
 				<ghost type="gold">0:28.26</ghost>
 				<ghost type="platin">0:25.76</ghost>
 				<ghost type="dev" name="Stephen I.">0:22.98</ghost>
