@@ -60,7 +60,20 @@ function loadTimes (xml) {
 
 						for (let num4 = 0; num4 < tracks.length; num4++) {
 							var elem = cElem('span', column);
-							elem.innerHTML = tracks[num4].getAttribute('name');
+							if (tracks[num4].getAttribute('name') == '' || tracks[num4].getAttribute('name') === null) {
+								var result;
+								var typeEmpty = xml.querySelector('column[name="track"]').getAttribute('empty');
+								if (typeEmpty != null) {
+									result = typeEmpty;
+								} else if (xml.querySelector('empty') != null && xml.querySelector('empty').innerHTML != null) {
+									result = xml.querySelector('empty').innerHTML;
+								} else {
+									result = 'N/A';
+								}
+								elem.innerHTML = result;
+							} else {
+								elem.innerHTML = tracks[num4].getAttribute('name');
+							}
 						}
 						break;
 					case 'time':
@@ -104,8 +117,22 @@ function loadTimes (xml) {
 							var result = undefined;
 							for (let num5 = 0; num5 < types.length; num5++) {
 								if (types[num5].getAttribute('type') === curC.getAttribute('type')) {
-									result = types[num5].getAttribute('name');
+									if (types[num5].getAttribute('name') == '' || types[num5].getAttribute('name') === null) {
+										break;
+									} else {
+										result = types[num5].getAttribute('name');
+									}
 									break;
+								}
+							}
+							if (result === undefined) {
+								var typeEmpty = xml.querySelector('column[name="time"][type="' + curC.getAttribute('type') + '"]').getAttribute('empty');
+								if (typeEmpty != null) {
+									result = typeEmpty;
+								} else if (xml.querySelector('empty') != null && xml.querySelector('empty').innerHTML != null) {
+									result = xml.querySelector('empty').innerHTML;
+								} else {
+									result = 'N/A';
 								}
 							}
 							elem.innerHTML = result;
