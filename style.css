@@ -86,6 +86,10 @@ ol {
 	display: none;
 }
 
+#contentsTitle {
+	text-align: center;
+	border-bottom: 1px solid transparent;
+}
 #contentsShow:hover {
 	cursor: pointer;
 }
