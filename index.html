@@ -5,28 +5,28 @@
 	<meta charset="utf-8">
 
 	<title>Time Trial Tracker</title>
-	<meta name="description" content="A collection of in-game time trial ghosts.">
+	<meta name="description" content="A collection of in-game time trial ghosts for various games.">
 	<meta name="author" content="blueYOSHI9000">
 	<meta name="robots" content="noodp,noydir" />
 
 
-	<!--meta property="og:type" content="website">
-	<meta property="og:title" content="Mario Party Overlay">
-	<meta property="og:description" content="An extensive and easy to use 'Bonus Star' tracker for all Mario Party games!">
-	<meta property="og:image" content="https://raw.githubusercontent.com/blueYOSHI9000/MarioPartyOverlay/master/img/stars.png">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Time Trial Tracker">
+	<meta property="og:description" content="A collection of in-game time trial ghosts for various games.">
+	<!--meta property="og:image" content="https://raw.githubusercontent.com/blueYOSHI9000/MarioPartyOverlay/master/img/stars.png"-->
 	<meta property="og:locale" content="en_US">
-	<meta property="og:url" content="https://blueyoshi9000.github.io/MarioPartyOverlay/">
+	<meta property="og:url" content="https://blueyoshi9000.github.io/TimeTrialTracker/">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@yoshisrc">
 	<meta name="twitter:creator" content="@yoshisrc">
-	<meta name="twitter:description" content="An extensive and easy to use 'Bonus Star' tracker for all Mario Party games!">
-	<meta name="twitter:title" content="Mario Party Overlay">
-	<meta name="twitter:image" content="https://raw.githubusercontent.com/blueYOSHI9000/MarioPartyOverlay/master/img/stars.png">
+	<meta name="twitter:description" content="A collection of in-game time trial ghosts for various games.">
+	<meta name="twitter:title" content="Time Trial Tracker">
+	<!--meta name="twitter:image" content="https://raw.githubusercontent.com/blueYOSHI9000/MarioPartyOverlay/master/img/stars.png"-->
 
-	<meta name="google-site-verification" content="L7wGU_sd9ri9CM2r9zhWhwq2pLkPtuemouRzyRFudC8" /-->
+	<!--meta name="google-site-verification" content="L7wGU_sd9ri9CM2r9zhWhwq2pLkPtuemouRzyRFudC8" /-->
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=.8, shrink-to-fit=no">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -52,6 +52,7 @@
 				<!-- === ENTER GAME HERE === -->
 
 				<img src="xml/CrashTrilogy/logo.png" onclick="loadXML('CrashTrilogy')" alt="Crash Bandicoot N. Sane Trilogy" title="Crash Bandicoot N. Sane Trilogy">
+				<img src="xml/CTRNF/logo.png" onclick="loadXML('CTRNF')" alt="Crash Team Racing Nitro-Fueled" title="Crash Team Racing Nitro-Fueled">
 				<img src="xml/MK8D/logo.png" onclick="loadXML('MK8D')" alt="Mario Kart 8 Deluxe" title="Mario Kart 8 Deluxe">
 
 				<!-- ====== -->
@@ -64,12 +65,17 @@
 			<div id="contentsTitle">
 				Contents [<a id="contentsShow" onclick="toggleContents()">Show</a>]
 			</div>
-			<ol id="contents">
-			</ol>
+			<div id="contentsWrapper">
+				<ol id="contents">
+				</ol>
+			</div>
+		</span> <br>
+		<span id="presets">
 		</span>
 		<div id="timetrials">
 		</div>
 		<button id="backButton" onclick="location.hash = ''; location.search = '';">Game Select</button>
 	</div>
+	<script src="load.js"></script>
 	<script src="main.js"></script>
 </body>

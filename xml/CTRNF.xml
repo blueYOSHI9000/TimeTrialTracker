@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timetrial version="1.0.3">
+	<metadata>
+		<title short="CTRNF">Crash Team Racing Nitro-Fueled</title>
+		<logo src="logo.png" />
+		<empty>WIP</empty>
+		<columns>
+			<column name="track">Track</column>
+			<column name="time" type="ntropy">N. Tropy Ghost</column>
+			<column name="time" type="oxide">Oxide Ghost</column>
+			<column name="time" type="easysapphire">Sapphire (Easy)</column>
+			<column name="time" type="easygold">Gold (Easy)</column>
+			<column name="time" type="easyplatin">Platin (Easy)</column>
+			<column name="time" type="normalsapphire" hidden="true">Sapphire (Normal)</column>
+			<column name="time" type="normalgold" hidden="true">Gold (Normal)</column>
+			<column name="time" type="normalplatin" hidden="true">Platin (Normal)</column>
+			<column name="time" type="hardsapphire" hidden="true">Sapphire (Hard)</column>
+			<column name="time" type="hardgold" hidden="true">Gold (Hard)</column>
+			<column name="time" type="hardplatin" hidden="true">Platin (Hard)</column>
+		</columns>
+		<presets>
+			<preset name="Relict Difficulty">
+				<option name="Easy">
+					<toggle force="show" name="time" type="easysapphire" />
+					<toggle force="show" name="time" type="easygold" />
+					<toggle force="show" name="time" type="easyplatin" />
+					<toggle force="hide" name="time" type="normalsapphire" />
+					<toggle force="hide" name="time" type="normalgold" />
+					<toggle force="hide" name="time" type="normalplatin" />
+					<toggle force="hide" name="time" type="hardsapphire" />
+					<toggle force="hide" name="time" type="hardgold" />
+					<toggle force="hide" name="time" type="hardplatin" />
+				</option>
+				<option name="Normal" default="true">
+					<toggle force="hide" name="time" type="easysapphire" />
+					<toggle force="hide" name="time" type="easygold" />
+					<toggle force="hide" name="time" type="easyplatin" />
+					<toggle force="show" name="time" type="normalsapphire" />
+					<toggle force="show" name="time" type="normalgold" />
+					<toggle force="show" name="time" type="normalplatin" />
+					<toggle force="hide" name="time" type="hardsapphire" />
+					<toggle force="hide" name="time" type="hardgold" />
+					<toggle force="hide" name="time" type="hardplatin" />
+				</option>
+				<option name="Hard">
+					<toggle force="hide" name="time" type="easysapphire" />
+					<toggle force="hide" name="time" type="easygold" />
+					<toggle force="hide" name="time" type="easyplatin" />
+					<toggle force="hide" name="time" type="normalsapphire" />
+					<toggle force="hide" name="time" type="normalgold" />
+					<toggle force="hide" name="time" type="normalplatin" />
+					<toggle force="show" name="time" type="hardsapphire" />
+					<toggle force="show" name="time" type="hardgold" />
+					<toggle force="show" name="time" type="hardplatin" />
+				</option>
+			</preset>
+			<preset name="Show ghosts" notitle="true" type="button">
+				<option name="Toggle ghosts">
+					<toggle name="time" type="ntropy" />
+					<toggle name="time" type="oxide" />
+				</option>
+			</preset>
+		</presets>
+		<styles>
+			<!--background img="bg.jpg" repeat="true" /-->
+		</styles>
+		<credits>
+			<times name="blueYOSHI9000" url="https://twitter.com/yoshisrc" />
+			<creator name="blueYOSHI9000" url="https://twitter.com/yoshisrc" />
+			<!--background official="true" /-->
+		</credits>
+	</metadata>
+	<game name="Crash Team Racing Nitro-Fueled" src="logo.png">
+		<cup name="N. Sanity Beach Area">
+			<track name="Crash Cove">
+				<ghost type="ntropy">1:34:86</ghost>
+				<ghost type="oxide">1:27:52</ghost>
+
+				<ghost type="easysapphire">1:23:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">0:56:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Mystery Caves">
+				<ghost type="ntropy">2:24:45</ghost>
+				<ghost type="oxide">2:14:00</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire">2:00:00</ghost>
+				<ghost type="normalgold">1:49:00</ghost>
+				<ghost type="normalplatin">1:38:00</ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Sewer Speedway">
+				<ghost type="ntropy">2:13:70</ghost>
+				<ghost type="oxide">1:56:18</ghost>
+
+				<ghost type="easysapphire">1:38:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">0:43:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Roo's Tubes">
+				<ghost type="ntropy">1:34:19</ghost>
+				<ghost type="oxide">1:23:65</ghost>
+
+				<ghost type="easysapphire">1:20:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">1:05:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+		<cup name="Gem Stone Valley Area">
+			<track name="Slide Coliseum">
+				<ghost type="ntropy">2:08:49</ghost>
+				<ghost type="oxide">2:00:88</ghost>
+
+				<ghost type="easysapphire">2:00:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">1:45:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Turbo Track">
+				<ghost type="ntropy">2:18:54</ghost>
+				<ghost type="oxide">2:06:45</ghost>
+
+				<ghost type="easysapphire">1:50:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">1:24:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+		<cup name="Lost Ruins Area">
+			<track name="Coco Park">
+				<ghost type="ntropy">1:37:53</ghost>
+				<ghost type="oxide">1:29:35</ghost>
+
+				<ghost type="easysapphire">1:40:00</ghost>
+				<ghost type="easygold">1:18:00</ghost>
+				<ghost type="easyplatin">0:55:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Tiger Temple">
+				<ghost type="ntropy">2:02:75</ghost>
+				<ghost type="oxide">1:55:91</ghost>
+
+				<ghost type="easysapphire">1:30:00</ghost>
+				<ghost type="easygold">1:08:00</ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Papu's Pyramid">
+				<ghost type="ntropy">1:59:88</ghost>
+				<ghost type="oxide">1:46:24</ghost>
+
+				<ghost type="easysapphire">1:40:00</ghost>
+				<ghost type="easygold">1:13:00</ghost>
+				<ghost type="easyplatin">0:48:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Dingo Canyon">
+				<ghost type="ntropy">1:48:54</ghost>
+				<ghost type="oxide">1:45:47</ghost>
+
+				<ghost type="easysapphire">1:35:00</ghost>
+				<ghost type="easygold">1:14:00</ghost>
+				<ghost type="easyplatin">0:58:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+		<cup name="Glacier Park Area">
+			<track name="Polar Pass">
+				<ghost type="ntropy">3:00:58</ghost>
+				<ghost type="oxide">2:46:97</ghost>
+
+				<ghost type="easysapphire">3:05:00</ghost>
+				<ghost type="easygold">2:38:00</ghost>
+				<ghost type="easyplatin">2:10:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Tiny Arena">
+				<ghost type="ntropy">3:51:43</ghost>
+				<ghost type="oxide">3:43:22</ghost>
+
+				<ghost type="easysapphire">3:50:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">3:05:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Dragon Mines">
+				<ghost type="ntropy">1:45:54</ghost>
+				<ghost type="oxide">1:34:62</ghost>
+
+				<ghost type="easysapphire">1:34:00</ghost>
+				<ghost type="easygold">1:16:00</ghost>
+				<ghost type="easyplatin">1:00:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Blizzard Bluff">
+				<ghost type="ntropy">1:37:23</ghost>
+				<ghost type="oxide">1:28:19</ghost>
+
+				<ghost type="easysapphire">1:35:00</ghost>
+				<ghost type="easygold">1:13:00</ghost>
+				<ghost type="easyplatin">0:50:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+		<cup name="Citadel City Area">
+			<track name="Hot Air Skyway">
+				<ghost type="ntropy">3:21:43</ghost>
+				<ghost type="oxide">3:09:89</ghost>
+
+				<ghost type="easysapphire">3:10:00</ghost>
+				<ghost type="easygold">2:39:00</ghost>
+				<ghost type="easyplatin">2:07:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Cortex Castle">
+				<ghost type="ntropy">2:40:39</ghost>
+				<ghost type="oxide">2:36:09</ghost>
+
+				<ghost type="easysapphire">2:40:00</ghost>
+				<ghost type="easygold">2:09:00</ghost>
+				<ghost type="easyplatin">1:37:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="N. Gin Labs">
+				<ghost type="ntropy">1:51:54</ghost>
+				<ghost type="oxide">1:39:65</ghost>
+
+				<ghost type="easysapphire">2:20:00</ghost>
+				<ghost type="easygold">1:39:00</ghost>
+				<ghost type="easyplatin">0:58:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Oxide Station">
+				<ghost type="ntropy">3:30:14</ghost>
+				<ghost type="oxide">3:27:67</ghost>
+
+				<ghost type="easysapphire">3:22:00</ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin">2:39:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+		<cup name="Crash Nitro Kart">
+			<track name="Inferno Island">
+				<ghost type="ntropy">1:54:41</ghost>
+				<ghost type="oxide">1:46:47</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Jungle Boogie">
+				<ghost type="ntropy">1:33:89</ghost>
+				<ghost type="oxide">1:27:38</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Clockwork Wumpa">
+				<ghost type="ntropy">2:40:09</ghost>
+				<ghost type="oxide">2:23:97</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Android Alley">
+				<ghost type="ntropy">3:17:59</ghost>
+				<ghost type="oxide">2:58:47</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Electron Avenue">
+				<ghost type="ntropy">4:13:52</ghost>
+				<ghost type="oxide">3:52:23</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Deep Sea Driving">
+				<ghost type="ntropy">2:22:90</ghost>
+				<ghost type="oxide">2:05:96</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Thunder Struck">
+				<ghost type="ntropy">3:04:18</ghost>
+				<ghost type="oxide">2:58:68</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Tiny Temple">
+				<ghost type="ntropy">2:06:89</ghost>
+				<ghost type="oxide">1:47:71</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Meteor Gorge">
+				<ghost type="ntropy">1:45:56</ghost>
+				<ghost type="oxide">1:39:00</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Barin Ruins">
+				<ghost type="ntropy">2:07:79</ghost>
+				<ghost type="oxide">1:55:21</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Out of Time">
+				<ghost type="ntropy">3:00:05</ghost>
+				<ghost type="oxide">2:40:09</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Assembly Lane">
+				<ghost type="ntropy">3:08:76</ghost>
+				<ghost type="oxide">3:00:41</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Hyper Spaceway">
+				<ghost type="ntropy">3:00:91</ghost>
+				<ghost type="oxide">2:40:79</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+		<cup name="Bonus Track">
+			<track name="Twilight Tour">
+				<ghost type="ntropy">2:44:23</ghost>
+				<ghost type="oxide">2:34:22</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Prehistoric Playground">
+				<ghost type="ntropy">3:00:08</ghost>
+				<ghost type="oxide">2:41:36</ghost>
+
+				<ghost type="easysapphire">1:35:00</ghost>
+				<ghost type="easygold">2:15:00</ghost>
+				<ghost type="easyplatin">1:50:00</ghost>
+				
+				<ghost type="normalsapphire"></ghost>
+				<ghost type="normalgold"></ghost>
+				<ghost type="normalplatin"></ghost>
+				
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+		</cup>
+	</game>
+</timetrial>
