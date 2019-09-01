@@ -7,7 +7,11 @@ function loadPreset (id) {
 	var name = id.substring(0, id.length - 1);
 	var num = id[id.length - 1];
 
-	var presetList = presetsVar.querySelectorAll('presets preset');
+	if (ver.minor >= 1) {
+		var presetList = permXML.querySelectorAll('presetlist preset');
+	} else {
+		var presetList = permXML.querySelectorAll('presets preset');
+	}
 
 	for (let num2 = 0; num2 < presetList.length; num2++) {
 		if (presetList[num2].getAttribute('name').replace(/[^\w\s]/gi, '').replace(/ /g,"_") === name) {

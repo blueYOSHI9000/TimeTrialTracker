@@ -1,4 +1,8 @@
 var permXML;
+var ver = {
+	major: null, //basically never gets changed anyway (see wiki), no need to use it anywhere
+	minor: null  //minor and micro can be combined as micro additions are always backwards compatible on their own (see wiki)
+}
 
 /*
 * Loads the XML file.
@@ -11,6 +15,10 @@ function loadXML (file) {
 
 		var stateObj = {};
 		history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
+
+		var arr = data.querySelector('timetrial').getAttribute('version').split('.');
+		ver.major = parseInt(arr[0]);
+		ver.minor = parseFloat(arr[1] + '.' + arr[2]);
 
 		document.getElementById('gameSelect').style.display = 'none';
 		document.getElementById('backButton').style.display = 'unset';
@@ -47,7 +55,11 @@ window.onload = function () {
 */
 function loadTimes (xml) {
 	var games = xml.querySelectorAll('game');
-	var metaColumns = xml.querySelectorAll('column');
+	if (ver.minor >= 1) {
+		var metaColumns = xml.querySelectorAll('columnlist column');
+	} else {
+		var metaColumns = xml.querySelectorAll('columns column');
+	}
 	var titleShort = xml.querySelector('title').getAttribute('short');
 
 	for (let num = 0; num < games.length; num++) { //game loop
@@ -340,17 +352,25 @@ function loadPresetList (xml) {
 
 	presetsVar = xml.querySelector('presets');
 
-	var presetList = xml.querySelectorAll('presets preset');
+	if (ver.minor >= 1) {
+		var presetList = xml.querySelectorAll('presetlist preset');
+	} else {
+		var presetList = xml.querySelectorAll('presets preset');
+	}
 
 	for (let num = 0; num < presetList.length; num++) {
 		cElem('br', elem);
-		var elem2 = cElem('span', elem);
-		var elem3 = cElem('span', elem2);
-		elem2.classList.add('preset');
-		elem3.classList.add('presetTitle');
-		elem3.innerText = presetList[num].getAttribute('name') + ':';
+		var elContainer = cElem('span', elem);
+		if (presetList[num].getAttribute('hidden') === 'true') {
+			elContainer.style.display = 'none';
+		}
+
+		var elTitle = cElem('span', elContainer);
+		elContainer.classList.add('preset');
+		elTitle.classList.add('presetTitle');
+		elTitle.innerText = presetList[num].getAttribute('name') + ':';
 		if (presetList[num].getAttribute('notitle') != null) {
-			elem3.style.visibility = 'hidden';
+			elTitle.style.visibility = 'hidden';
 			var notitle = true;
 		} else {
 			var notitle = false;
@@ -366,8 +386,8 @@ function loadPresetList (xml) {
 		var optionList = presetList[num].querySelectorAll('preset option');
 
 		for (let num2 = 0; num2 < optionList.length; num2++) {
-			cElem('br', elem2);
-			var elem4 = cElem('span', elem2);
+			cElem('br', elContainer);
+			var elem4 = cElem('span', elContainer);
 
 			switch (type) {
 				case 'button':
