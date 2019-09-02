@@ -19,9 +19,9 @@ function loadPreset (id) {
 
 			for (let num3 = 0; num3 < toggleList.length; num3++) {
 				if (toggleList[num3].getAttribute('type') == null) {
-					var arr = document.querySelectorAll('.flexColumn[name="' + toggleList[num3].getAttribute('name') + '"]');
+					var arr = document.querySelectorAll('.flexColumn[content="' + toggleList[num3].getAttribute('content') + '"]');
 				} else {
-					var arr = document.querySelectorAll('.flexColumn[name="' + toggleList[num3].getAttribute('name') + '"][type="' + toggleList[num3].getAttribute('type') + '"]');
+					var arr = document.querySelectorAll('.flexColumn[content="' + toggleList[num3].getAttribute('content') + '"][type="' + toggleList[num3].getAttribute('type') + '"]');
 				}
 				var force = toggleList[num3].getAttribute('force');
 				for (let num4 = 0; num4 < arr.length; num4++) {

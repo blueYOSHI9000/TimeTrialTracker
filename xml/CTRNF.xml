@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<timetrial version="1.1.0">
+<timetrial version="1.2.0">
 	<metadata>
 		<title short="CTRNF">Crash Team Racing Nitro-Fueled</title>
 		<logo src="logo.png" />
 		<empty>WIP</empty>
 		<columnlist>
-			<column name="track">Track</column>
-			<column name="time" type="ntropy">N. Tropy Ghost</column>
-			<column name="time" type="oxide">Oxide Ghost</column>
-			<column name="time" type="easysapphire">Sapphire (Easy)</column>
-			<column name="time" type="easygold">Gold (Easy)</column>
-			<column name="time" type="easyplatin">Platin (Easy)</column>
-			<column name="time" type="normalsapphire" hidden="true">Sapphire (Normal)</column>
-			<column name="time" type="normalgold" hidden="true">Gold (Normal)</column>
-			<column name="time" type="normalplatin" hidden="true">Platin (Normal)</column>
-			<column name="time" type="hardsapphire" hidden="true">Sapphire (Hard)</column>
-			<column name="time" type="hardgold" hidden="true">Gold (Hard)</column>
-			<column name="time" type="hardplatin" hidden="true">Platin (Hard)</column>
+			<column content="track">Track</column>
+			<column content="time" type="ntropy">N. Tropy Ghost</column>
+			<column content="time" type="oxide">Oxide Ghost</column>
+			<column content="time" type="easysapphire">Sapphire (Easy)</column>
+			<column content="time" type="easygold">Gold (Easy)</column>
+			<column content="time" type="easyplatin">Platin (Easy)</column>
+			<column content="time" type="normalsapphire" hidden="true">Sapphire (Normal)</column>
+			<column content="time" type="normalgold" hidden="true">Gold (Normal)</column>
+			<column content="time" type="normalplatin" hidden="true">Platin (Normal)</column>
+			<column content="time" type="hardsapphire" hidden="true">Sapphire (Hard)</column>
+			<column content="time" type="hardgold" hidden="true">Gold (Hard)</column>
+			<column content="time" type="hardplatin" hidden="true">Platin (Hard)</column>
 		</columnlist>
 		<presetlist>
 			<preset name="Relict Difficulty">
 				<option name="Easy">
-					<toggle force="show" name="time" type="easysapphire" />
-					<toggle force="show" name="time" type="easygold" />
-					<toggle force="show" name="time" type="easyplatin" />
-					<toggle force="hide" name="time" type="normalsapphire" />
-					<toggle force="hide" name="time" type="normalgold" />
-					<toggle force="hide" name="time" type="normalplatin" />
-					<toggle force="hide" name="time" type="hardsapphire" />
-					<toggle force="hide" name="time" type="hardgold" />
-					<toggle force="hide" name="time" type="hardplatin" />
+					<toggle force="show" content="time" type="easysapphire" />
+					<toggle force="show" content="time" type="easygold" />
+					<toggle force="show" content="time" type="easyplatin" />
+					<toggle force="hide" content="time" type="normalsapphire" />
+					<toggle force="hide" content="time" type="normalgold" />
+					<toggle force="hide" content="time" type="normalplatin" />
+					<toggle force="hide" content="time" type="hardsapphire" />
+					<toggle force="hide" content="time" type="hardgold" />
+					<toggle force="hide" content="time" type="hardplatin" />
 				</option>
 				<option name="Normal" default="true">
-					<toggle force="hide" name="time" type="easysapphire" />
-					<toggle force="hide" name="time" type="easygold" />
-					<toggle force="hide" name="time" type="easyplatin" />
-					<toggle force="show" name="time" type="normalsapphire" />
-					<toggle force="show" name="time" type="normalgold" />
-					<toggle force="show" name="time" type="normalplatin" />
-					<toggle force="hide" name="time" type="hardsapphire" />
-					<toggle force="hide" name="time" type="hardgold" />
-					<toggle force="hide" name="time" type="hardplatin" />
+					<toggle force="hide" content="time" type="easysapphire" />
+					<toggle force="hide" content="time" type="easygold" />
+					<toggle force="hide" content="time" type="easyplatin" />
+					<toggle force="show" content="time" type="normalsapphire" />
+					<toggle force="show" content="time" type="normalgold" />
+					<toggle force="show" content="time" type="normalplatin" />
+					<toggle force="hide" content="time" type="hardsapphire" />
+					<toggle force="hide" content="time" type="hardgold" />
+					<toggle force="hide" content="time" type="hardplatin" />
 				</option>
 				<option name="Hard">
-					<toggle force="hide" name="time" type="easysapphire" />
-					<toggle force="hide" name="time" type="easygold" />
-					<toggle force="hide" name="time" type="easyplatin" />
-					<toggle force="hide" name="time" type="normalsapphire" />
-					<toggle force="hide" name="time" type="normalgold" />
-					<toggle force="hide" name="time" type="normalplatin" />
-					<toggle force="show" name="time" type="hardsapphire" />
-					<toggle force="show" name="time" type="hardgold" />
-					<toggle force="show" name="time" type="hardplatin" />
+					<toggle force="hide" content="time" type="easysapphire" />
+					<toggle force="hide" content="time" type="easygold" />
+					<toggle force="hide" content="time" type="easyplatin" />
+					<toggle force="hide" content="time" type="normalsapphire" />
+					<toggle force="hide" content="time" type="normalgold" />
+					<toggle force="hide" content="time" type="normalplatin" />
+					<toggle force="show" content="time" type="hardsapphire" />
+					<toggle force="show" content="time" type="hardgold" />
+					<toggle force="show" content="time" type="hardplatin" />
 				</option>
 			</preset>
 			<preset name="Show ghosts" type="button" notitle="true" hidden="true">
 				<option name="Toggle ghosts">
-					<toggle name="time" type="ntropy" />
-					<toggle name="time" type="oxide" />
+					<toggle content="time" type="ntropy" />
+					<toggle content="time" type="oxide" />
 				</option>
 			</preset>
 		</presetlist>

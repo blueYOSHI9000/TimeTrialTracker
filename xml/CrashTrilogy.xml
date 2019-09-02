@@ -13,8 +13,7 @@
 		</columns>
 		<styles>
 			<favicon src="wumpafruit.png" />
-			<background img="bg.jpg" />
-			<frontbg style="linear-gradient(#d46100, #d43e00)" />
+			<frontbg color="#d16500" />
 			<textcolor title="#f9e52c" link="#f9e52c" linkhover="#f9aa2c" />
 		</styles>
 		<credits>

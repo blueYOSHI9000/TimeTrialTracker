@@ -26,6 +26,10 @@ function loadXML (file) {
 		document.getElementById('contentsContainer').style.display = 'inline-block';
 		$('html,body').scrollTop(0);
 
+		if (ver.minor < 1.2) {
+			loadLegacy(data);
+		}
+
 		loadTimes(data);
 		loadStyles(data);
 		loadPresetList(data);
@@ -105,7 +109,7 @@ function loadTimes (xml) {
 
 				var curC = metaColumns[num3];
 
-				column.setAttribute('name', curC.getAttribute('name'));
+				column.setAttribute('content', curC.getAttribute('content'));
 				if (curC.getAttribute('type') != null) {
 					column.setAttribute('type', curC.getAttribute('type'));
 				}
@@ -113,7 +117,7 @@ function loadTimes (xml) {
 					column.style.display = 'none';
 				}
 
-				switch (curC.getAttribute('name')) { //get what type the column is and then loop for each ghost
+				switch (curC.getAttribute('content')) { //get what type the column is and then loop for each ghost
 					case 'track':
 						var elem = cElem('span', column);
 						elem.innerHTML = curC.innerHTML;
@@ -155,7 +159,7 @@ function loadTimes (xml) {
 								}
 							}
 							if (result === undefined) {
-								var typeEmpty = xml.querySelector('column[name="time"][type="' + curC.getAttribute('type') + '"]').getAttribute('empty');
+								var typeEmpty = xml.querySelector('column[content="time"][type="' + curC.getAttribute('type') + '"]').getAttribute('empty');
 								if (typeEmpty != null) {
 									result = typeEmpty;
 								} else if (xml.querySelector('empty') != null && xml.querySelector('empty').innerHTML != null) {
@@ -186,7 +190,7 @@ function loadTimes (xml) {
 								}
 							}
 							if (result === undefined) {
-								var typeEmpty = xml.querySelector('column[name="time"][type="' + curC.getAttribute('type') + '"]').getAttribute('empty');
+								var typeEmpty = xml.querySelector('column[content="time"][type="' + curC.getAttribute('type') + '"]').getAttribute('empty');
 								if (typeEmpty != null) {
 									result = typeEmpty;
 								} else if (xml.querySelector('empty') != null && xml.querySelector('empty').innerHTML != null) {
@@ -261,6 +265,7 @@ function loadStyles (xml) {
 			}
 		} else if (frontbg.getAttribute('color') != null) {
 			addCSSRule('#mainContainer', 'background-color', frontbg.getAttribute('color'));
+			document.getElementById('mainContainer').style.background = 'unset';
 		}
 	}
 
@@ -553,4 +558,26 @@ function loadCredits (xml) {
 	cElem('br', 'timetrials');
 	var elem = cElem('span', 'timetrials');
 	elem.innerHTML = 'Leaderboard created with <a href="https://blueyoshi9000.github.io/TimeTrialTracker/" rel="noopener" target="_blank">Time Trial Tracker</a>. <br> <br> All products and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.';
+}
+
+/*
+* Loads legacy XML files and updates them.
+* 
+* @param {XML Tree} xml XML tree that should be loaded.
+*/
+function loadLegacy (xml) {
+	if (ver.minor >= 1) {
+		var columns = xml.querySelectorAll('columnlist column');
+		var options = xml.querySelectorAll('preset option');
+	} else {
+		var columns = xml.querySelectorAll('columns column');
+		var options = xml.querySelectorAll('presets option');
+	}
+
+	for (let num = 0; num < columns.length; num++) {
+		columns[num].setAttribute('content', columns[num].getAttribute('name'));
+	}
+	for (let num = 0; num < options.length; num++) {
+		options[num].setAttribute('content', options[num].getAttribute('name'));
+	}
 }
