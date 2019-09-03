@@ -25,10 +25,10 @@ h3 {
 	margin-bottom: 0;
 }
 a {
-	color: #18d403;
+	color: #24ff0c;
 }
 a:hover {
-	color: #19a709;
+	color: #26d412;
 }
 ol {
 	padding: 0;
@@ -39,7 +39,7 @@ ol {
 	width: 1200px;
 	margin: 30px auto;
 	padding: 20px;
-	background: linear-gradient(#2975d0, #1e579c);
+	background-color: #276cbf;
 	border: 3px solid black;
 	border-radius: 20px;
 	box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.7);
@@ -111,12 +111,6 @@ ol {
 	list-style-type: none;
 	counter-reset: section;
 }
-#contents a {
-	color: #17de00;
-}
-#contents a:hover {
-	color: #15b903;
-}
 #contents li::before {
 	counter-increment: section;
 	content: counters(section, ".") " ";
@@ -170,8 +164,7 @@ ol {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 .flexColumn span:nth-child(1) {
-	color: #18d403;
-	border-bottom: 2px solid #18d403;
+	color: #2ee403;
 	background-color: unset;
 	font-weight: 650;
 	font-size: 1.2rem;

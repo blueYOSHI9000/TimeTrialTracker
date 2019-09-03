@@ -119,6 +119,7 @@ function loadTimes (xml) {
 
 				switch (curC.getAttribute('content')) { //get what type the column is and then loop for each ghost
 					case 'track':
+					case 'trackname':
 						var elem = cElem('span', column);
 						elem.innerHTML = curC.innerHTML;
 
@@ -265,7 +266,6 @@ function loadStyles (xml) {
 			}
 		} else if (frontbg.getAttribute('color') != null) {
 			addCSSRule('#mainContainer', 'background-color', frontbg.getAttribute('color'));
-			document.getElementById('mainContainer').style.background = 'unset';
 		}
 	}
 
@@ -380,10 +380,16 @@ function loadPresetList (xml) {
 		} else {
 			var notitle = false;
 		}
-
-		var type = presetList[num].getAttribute('type');
-		if (type == null) {
-			type = 'radio';
+		if (ver.minor < 1.3) {
+			var type = presetList[num].getAttribute('type');
+			if (type == null) {
+				type = 'radio';
+			}
+		} else {
+			var type = presetList[num].getAttribute('pstype');
+			if (type == null) {
+				type = 'radio';
+			}
 		}
 
 		var presetName = presetList[num].getAttribute('name').replace(/[^\w\s]/gi, '').replace(/ /g,"_");

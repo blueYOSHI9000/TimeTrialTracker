@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<timetrial version="1.2.0">
+<timetrial version="1.3.0">
 	<metadata>
 		<title short="CTRNF">Crash Team Racing Nitro-Fueled</title>
 		<logo src="logo.png" />
 		<empty>WIP</empty>
 		<columnlist>
-			<column content="track">Track</column>
+			<column content="trackname">Track</column>
 			<column content="time" type="ntropy">N. Tropy Ghost</column>
 			<column content="time" type="oxide">Oxide Ghost</column>
 			<column content="time" type="easysapphire">Sapphire (Easy)</column>
@@ -54,7 +54,7 @@
 					<toggle force="show" content="time" type="hardplatin" />
 				</option>
 			</preset>
-			<preset name="Show ghosts" type="button" notitle="true" hidden="true">
+			<preset name="Show ghosts" pstype="button" notitle="true" hidden="true">
 				<option name="Toggle ghosts">
 					<toggle content="time" type="ntropy" />
 					<toggle content="time" type="oxide" />
