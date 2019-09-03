@@ -63,6 +63,35 @@ function toggleContents () {
 	}
 }
 
+/*
+* Opens Settings.
+*/
+function openSettings () {
+	document.getElementById('settingsWrapper').style.visibility = 'visible';
+	document.getElementById('settingsWrapper').style.opacity = 1;
+}
+
+/*
+* Closes Settings.
+*/
+function closeSettings () {
+	document.getElementById('settingsWrapper').style.opacity = 0;
+	document.getElementById('settingsWrapper').style.visibility = 'hidden';
+}
+
+/*
+* Activates or deactivates the custom theme.
+*/
+function changeDefaultTheme () {
+	if (document.getElementById('defaultTheme').checked === true) {
+		location.search = location.search + '&defTheme=1&showSettings=1';
+		localStorage.setItem('defTheme', 1);
+	} else {
+		loadStyles(permXML);
+		localStorage.setItem('defTheme', 0);
+	}
+}
+
 var sheet = window.document.styleSheets[0];
 /*
 * Adds a single CSS rule.
@@ -105,7 +134,20 @@ function getUrl(variable) {
  	return(false);
 }
 
-//reloads the page when backbutton is used
+//reloads the page when back button is used
 window.addEventListener('popstate', (event) => {
 	location = location;
 });
+
+/*
+* Closes the settings if the user doesn't click on the settings while they are opened.
+*
+* @param {string} event What event got fired.
+*/
+function windowOnClick (event) {
+	var settings = document.querySelector("#settingsWrapper");
+	if (event.target === settings) {
+		closeSettings();
+	}
+}
+window.addEventListener("click", windowOnClick);

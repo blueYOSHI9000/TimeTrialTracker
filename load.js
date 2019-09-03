@@ -4,6 +4,16 @@ var ver = {
 	minor: null  //minor and micro can be combined as micro additions are always backwards compatible on their own (see wiki)
 }
 
+var lHash;
+window.onload = function () {
+	if (getUrl('game') != false) {
+		loadXML(getUrl('game'));
+	}
+	if (location.hash != '') {
+		lHash = location.hash.substring(1);
+	}
+}
+
 /*
 * Loads the XML file.
 * 
@@ -13,15 +23,12 @@ function loadXML (file) {
 	$.get('xml/' + file + '.xml', function(data) {
 		permXML = data; //for debugging
 
-		var stateObj = {};
-		history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
-
 		var arr = data.querySelector('timetrial').getAttribute('version').split('.');
 		ver.major = parseInt(arr[0]);
 		ver.minor = parseFloat(arr[1] + '.' + arr[2]);
 
 		document.getElementById('gameSelect').style.display = 'none';
-		document.getElementById('backButton').style.display = 'unset';
+		document.getElementById('buttonContainer').style.display = 'unset';
 
 		document.getElementById('contentsContainer').style.display = 'inline-block';
 		$('html,body').scrollTop(0);
@@ -31,7 +38,11 @@ function loadXML (file) {
 		}
 
 		loadTimes(data);
-		loadStyles(data);
+		if (getUrl('defTheme') == false || localStorage.getItem('defTheme') === '0') {
+			loadStyles(data);
+		} else {
+			document.getElementById('defaultTheme').checked = true;
+		}
 		loadPresetList(data);
 		loadCredits(data);
 
@@ -39,17 +50,13 @@ function loadXML (file) {
 			document.getElementById(lHash).scrollIntoView();
 			location.hash = lHash;
 		}
-	});
-}
+		if (getUrl('showSettings') != false) {
+			openSettings();
+		}
 
-var lHash;
-window.onload = function () {
-	if (getUrl('game') != false) {
-		loadXML(getUrl('game'));
-	}
-	if (location.hash != '') {
-		lHash = location.hash.substring(1);
-	}
+		var stateObj = {};
+		history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
+	});
 }
 
 /*
@@ -366,8 +373,9 @@ function loadPresetList (xml) {
 	for (let num = 0; num < presetList.length; num++) {
 		cElem('br', elem);
 		var elContainer = cElem('span', elem);
+
 		if (presetList[num].getAttribute('hidden') === 'true') {
-			elContainer.style.display = 'none';
+			document.getElementById('hiddenPresets').appendChild(elContainer);
 		}
 
 		var elTitle = cElem('span', elContainer);
