@@ -104,3 +104,8 @@ function getUrl(variable) {
 	}
  	return(false);
 }
+
+//reloads the page when backbutton is used
+window.addEventListener('popstate', (event) => {
+	location = location;
+});
