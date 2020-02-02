@@ -36,6 +36,24 @@ ol {
 	padding: 0;
 }
 
+h2 a, h3 a {
+	visibility: hidden;
+	opacity: 0;
+	position: relative;
+	top: -2px;
+	margin-left: 5px;
+	font-size: 20px;
+	vertical-align: middle;
+
+-webkit-transition: visibility .3s, opacity .3s;
+   -moz-transition: visibility .3s, opacity .3s;
+		transition: visibility .3s, opacity .3s;
+}
+h2:hover a, h3:hover a {
+	visibility: visible;
+	opacity: 1;
+}
+
 #mainContainer {
 	position: relative;
 	width: 1200px;

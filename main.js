@@ -1,6 +1,6 @@
 /*
 * Loads presets.
-* 
+*
 * @param {string} id The ID of the option activated.
 */
 function loadPreset (id) {
@@ -8,9 +8,9 @@ function loadPreset (id) {
 	var num = id[id.length - 1];
 
 	if (ver.minor >= 1) {
-		var presetList = permXML.querySelectorAll('presetlist preset');
+		var presetList = xml.querySelectorAll('presetlist preset');
 	} else {
-		var presetList = permXML.querySelectorAll('presets preset');
+		var presetList = xml.querySelectorAll('presets preset');
 	}
 
 	for (let num2 = 0; num2 < presetList.length; num2++) {
@@ -87,7 +87,7 @@ function changeDefaultTheme () {
 		location.search = location.search + '&defTheme=1&showSettings=1';
 		localStorage.setItem('defTheme', 1);
 	} else {
-		loadStyles(permXML);
+		loadStyles();
 		localStorage.setItem('defTheme', 0);
 	}
 }
@@ -95,7 +95,7 @@ function changeDefaultTheme () {
 var sheet = window.document.styleSheets[0];
 /*
 * Adds a single CSS rule.
-* 
+*
 * @param {string} selector The selector
 * @param {string} property The property
 * @param {string} value The value
@@ -106,10 +106,10 @@ function addCSSRule (selector, property, value) {
 
 /*
 * Creates an element and returns it.
-* 
+*
 * @param {string} type The element type it should be.
 * @param {string/DOM Element} parent The parent element, if an id is given it gets the DOM Element of it
-*/ 
+*/
 function cElem (type, parent) {
 	if (typeof parent === 'string') {
 		parent = document.getElementById(parent);
@@ -121,7 +121,7 @@ function cElem (type, parent) {
 
 /*
 * Gets variable from URL and returns it, returns false if it doesn't exist.
-* 
+*
 * @param {string} variable The variable it should get.
 */
 function getUrl(variable) {

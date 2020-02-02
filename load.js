@@ -1,4 +1,4 @@
-var permXML;
+var xml;
 var ver = {
 	major: null, //basically never gets changed anyway (see wiki), no need to use it anywhere
 	minor: null  //minor and micro can be combined as micro additions are always backwards compatible on their own (see wiki)
@@ -21,50 +21,73 @@ window.onload = function () {
 */
 function loadXML (file) {
 	$.get('xml/' + file + '.xml', function(data) {
-		permXML = data; //for debugging
-
-		var arr = data.querySelector('timetrial').getAttribute('version').split('.');
-		ver.major = parseInt(arr[0]);
-		ver.minor = parseFloat(arr[1] + '.' + arr[2]);
-
-		document.getElementById('gameSelect').style.display = 'none';
-		document.getElementById('buttonContainer').style.display = 'unset';
-
-		document.getElementById('contentsContainer').style.display = 'inline-block';
-		$('html,body').scrollTop(0);
-
-		if (ver.minor < 1.2) {
-			loadLegacy(data);
-		}
-
-		loadTimes(data);
-		if (getUrl('defTheme') == false || localStorage.getItem('defTheme') === '0') {
-			loadStyles(data);
-		} else {
-			document.getElementById('defaultTheme').checked = true;
-		}
-		loadPresetList(data);
-		loadCredits(data);
-
-		if (lHash != '' && lHash != undefined) {
-			document.getElementById(lHash).scrollIntoView();
-			location.hash = lHash;
-		}
-		if (getUrl('showSettings') != false) {
-			openSettings();
-		}
-
-		var stateObj = {};
-		history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
+		xml = data;
+		loadLeaderboard();
 	});
 }
 
 /*
-* Load the times from an XML Tree.
-* 
-* @param {XML tree} xml XML tree that should be loaded.
+* Loads the uploaded XML file.
 */
-function loadTimes (xml) {
+function loadXMLFromUpload () {
+	var file = document.getElementById('uploadFile').files[0];
+	var reader = new FileReader();
+	reader.readAsText(file);
+	reader.onload = function(e) {
+		readXml = e.target.result;
+		var parser = new DOMParser();
+		var doc = parser.parseFromString(readXml, "application/xml");
+
+		xml = doc;
+		loadLeaderboard(doc);
+	}
+}
+
+/*
+* Loads the leaderboard from the xml variable.
+*/
+function loadLeaderboard () {
+	console.log(typeof xml)
+	var arr = xml.querySelector('timetrial').getAttribute('version').split('.');
+	ver.major = parseInt(arr[0]);
+	ver.minor = parseFloat(arr[1] + '.' + arr[2]);
+
+	document.getElementById('gameSelect').style.display = 'none';
+	document.getElementById('buttonContainer').style.display = 'unset';
+
+	document.getElementById('contentsContainer').style.display = 'inline-block';
+	$('html,body').scrollTop(0);
+
+	if (ver.minor < 1.2) {
+		loadLegacy();
+	}
+
+	loadTimes();
+	if (getUrl('defTheme') == false && localStorage.getItem('defTheme') === '0') {
+		loadStyles();
+	} else {
+		document.getElementById('defaultTheme').checked = true;
+	}
+	loadPresetList();
+	loadCredits();
+
+	if (lHash != '' && lHash != undefined) {
+		document.getElementById(lHash).scrollIntoView();
+		location.hash = lHash;
+	}
+	if (getUrl('showSettings') != false) {
+		openSettings();
+	}
+
+	var file = xml.querySelector('title').getAttribute('short');
+	var stateObj = {};
+	history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
+}
+
+/*
+* Load the times from an XML Tree.
+*/
+function loadTimes () {
 	var games = xml.querySelectorAll('game');
 	if (ver.minor >= 1) {
 		var metaColumns = xml.querySelectorAll('columnlist column');
@@ -89,6 +112,11 @@ function loadTimes (xml) {
 		} else {
 			elem.innerHTML = curGame.getAttribute('name');
 		}
+		var permaLink = cElem('a', elem);
+		permaLink.innerHTML = '¶';
+		permaLink.title = 'Permanent link';
+		permaLink.href = '#' + curGame.getAttribute('name').replace(/ /g,"_");
+
 		var elem = cElem('li', 'contents');
 		elem.innerHTML = '<a href="#' + curGame.getAttribute('name').replace(/ /g,"_") + '">' + curGame.getAttribute('name') + '</a>';
 
@@ -100,6 +128,11 @@ function loadTimes (xml) {
 			var elem = cElem('h3', 'timetrials');
 			elem.id = cups[num2].getAttribute('name').replace(/ /g,"_");
 			elem.innerHTML = cups[num2].getAttribute('name');
+			
+			var permaLink = cElem('a', elem);
+			permaLink.innerHTML = '¶';
+			permaLink.title = 'Permanent link';
+			permaLink.href = '#' + cups[num2].getAttribute('name').replace(/ /g,"_");
 
 			var elem = cElem('li', curGameOl);
 			elem.innerHTML = '<a href="#' + cups[num2].getAttribute('name').replace(/ /g,"_") + '">' + cups[num2].getAttribute('name') + '</a>';
@@ -220,10 +253,8 @@ function loadTimes (xml) {
 
 /*
 * Load Styles from an XML Tree.
-* 
-* @param {XML Tree} xml XML tree that should be loaded.
 */
-function loadStyles (xml) {
+function loadStyles () {
 	var titleShort = xml.querySelector('title').getAttribute('short');
 	document.title = xml.querySelector('title').innerHTML + ' - Time Trial Tracker';
 
@@ -355,10 +386,8 @@ function loadStyles (xml) {
 var presetsVar;
 /*
 * Loads all presets from an XML Tree.
-* 
-* @param {XML Tree} xml The XML Tree.
 */
-function loadPresetList (xml) {
+function loadPresetList () {
 	var elem = document.getElementById('presets');
 	elem.innerHTML = '';
 
@@ -429,13 +458,16 @@ function loadPresetList (xml) {
 
 /*
 * Load Credits from an XML Tree.
-* 
-* @param {XML Tree} xml XML tree that should be loaded.
 */
-function loadCredits (xml) {
+function loadCredits () {
 	var elem = cElem('h2', 'timetrials');
 	elem.innerHTML = 'Credits';
 	elem.id = "timetrialcredits"; //in case a game/cup is called credits
+			
+	var permaLink = cElem('a', elem);
+	permaLink.innerHTML = '¶';
+	permaLink.title = 'Permanent link';
+	permaLink.href = '#timetrialcredits';
 
 	var elem = cElem('li', 'contents');
 	elem.innerHTML = '<a href="#timetrialcredits"> Credits </a>';
@@ -576,10 +608,8 @@ function loadCredits (xml) {
 
 /*
 * Loads legacy XML files and updates them.
-* 
-* @param {XML Tree} xml XML tree that should be loaded.
 */
-function loadLegacy (xml) {
+function loadLegacy () {
 	if (ver.minor >= 1) {
 		var columns = xml.querySelectorAll('columnlist column');
 		var options = xml.querySelectorAll('preset option');

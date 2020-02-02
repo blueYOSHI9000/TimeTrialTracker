@@ -11,9 +11,9 @@
 			<column content="time" type="easysapphire">Sapphire (Easy)</column>
 			<column content="time" type="easygold">Gold (Easy)</column>
 			<column content="time" type="easyplatin">Platin (Easy)</column>
-			<column content="time" type="normalsapphire" hidden="true">Sapphire (Normal)</column>
-			<column content="time" type="normalgold" hidden="true">Gold (Normal)</column>
-			<column content="time" type="normalplatin" hidden="true">Platin (Normal)</column>
+			<column content="time" type="normalsapphire" hidden="true">Sapphire (Medium)</column>
+			<column content="time" type="normalgold" hidden="true">Gold (Medium)</column>
+			<column content="time" type="normalplatin" hidden="true">Platin (Medium)</column>
 			<column content="time" type="hardsapphire" hidden="true">Sapphire (Hard)</column>
 			<column content="time" type="hardgold" hidden="true">Gold (Hard)</column>
 			<column content="time" type="hardplatin" hidden="true">Platin (Hard)</column>
@@ -31,7 +31,7 @@
 					<toggle force="hide" content="time" type="hardgold" />
 					<toggle force="hide" content="time" type="hardplatin" />
 				</option>
-				<option name="Normal" default="true">
+				<option name="Medium" default="true">
 					<toggle force="hide" content="time" type="easysapphire" />
 					<toggle force="hide" content="time" type="easygold" />
 					<toggle force="hide" content="time" type="easyplatin" />
@@ -79,11 +79,11 @@
 				<ghost type="easysapphire">1:23:00</ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin">0:56:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:17:00</ghost>
 				<ghost type="hardgold">1:05:00</ghost>
 				<ghost type="hardplatin">0:52:00</ghost>
@@ -95,11 +95,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire">2:00:00</ghost>
 				<ghost type="normalgold">1:49:00</ghost>
 				<ghost type="normalplatin">1:38:00</ghost>
-				
+
 				<ghost type="hardsapphire">1:55:00</ghost>
 				<ghost type="hardgold">1:44:00</ghost>
 				<ghost type="hardplatin">1:32:00</ghost>
@@ -111,11 +111,11 @@
 				<ghost type="easysapphire">1:38:00</ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin">0:43:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:33:00</ghost>
 				<ghost type="hardgold">1:05:00</ghost>
 				<ghost type="hardplatin">0:37:00</ghost>
@@ -127,11 +127,11 @@
 				<ghost type="easysapphire">1:20:00</ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin">1:05:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:15:00</ghost>
 				<ghost type="hardgold">1:05:00</ghost>
 				<ghost type="hardplatin">0:55:00</ghost>
@@ -145,11 +145,11 @@
 				<ghost type="easysapphire">2:00:00</ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin">1:45:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:55:00</ghost>
 				<ghost type="hardgold">1:45:00</ghost>
 				<ghost type="hardplatin">1:40:00</ghost>
@@ -161,11 +161,11 @@
 				<ghost type="easysapphire">1:50:00</ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin">1:24:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin">1:19:00</ghost>
@@ -179,11 +179,11 @@
 				<ghost type="easysapphire">1:40:00</ghost>
 				<ghost type="easygold">1:18:00</ghost>
 				<ghost type="easyplatin">0:55:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:35:00</ghost>
 				<ghost type="hardgold">1:12:00</ghost>
 				<ghost type="hardplatin">0:49:00</ghost>
@@ -195,11 +195,11 @@
 				<ghost type="easysapphire">1:30:00</ghost>
 				<ghost type="easygold">1:08:00</ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:20:00</ghost>
 				<ghost type="hardgold">1:02:00</ghost>
 				<ghost type="hardplatin">0:43:00</ghost>
@@ -211,11 +211,11 @@
 				<ghost type="easysapphire">1:40:00</ghost>
 				<ghost type="easygold">1:13:00</ghost>
 				<ghost type="easyplatin">0:48:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:34:00</ghost>
 				<ghost type="hardgold">1:09:00</ghost>
 				<ghost type="hardplatin">0:42:00</ghost>
@@ -227,11 +227,11 @@
 				<ghost type="easysapphire">1:35:00</ghost>
 				<ghost type="easygold">1:14:00</ghost>
 				<ghost type="easyplatin">0:58:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:25:00</ghost>
 				<ghost type="hardgold">1:09:00</ghost>
 				<ghost type="hardplatin">0:53:00</ghost>
@@ -245,11 +245,11 @@
 				<ghost type="easysapphire">3:05:00</ghost>
 				<ghost type="easygold">2:38:00</ghost>
 				<ghost type="easyplatin">2:10:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">3:00:00</ghost>
 				<ghost type="hardgold">2:33:00</ghost>
 				<ghost type="hardplatin">2:05:00</ghost>
@@ -261,11 +261,11 @@
 				<ghost type="easysapphire">3:50:00</ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin">3:05:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">3:45:00</ghost>
 				<ghost type="hardgold">3:22:00</ghost>
 				<ghost type="hardplatin">2:58:00</ghost>
@@ -277,11 +277,11 @@
 				<ghost type="easysapphire">1:34:00</ghost>
 				<ghost type="easygold">1:16:00</ghost>
 				<ghost type="easyplatin">1:00:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:28:00</ghost>
 				<ghost type="hardgold">1:11:00</ghost>
 				<ghost type="hardplatin">0:54:00</ghost>
@@ -293,11 +293,11 @@
 				<ghost type="easysapphire">1:35:00</ghost>
 				<ghost type="easygold">1:13:00</ghost>
 				<ghost type="easyplatin">0:50:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">1:30:00</ghost>
 				<ghost type="hardgold">1:08:00</ghost>
 				<ghost type="hardplatin">0:45:00</ghost>
@@ -311,11 +311,11 @@
 				<ghost type="easysapphire">3:10:00</ghost>
 				<ghost type="easygold">2:39:00</ghost>
 				<ghost type="easyplatin">2:07:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">3:05:00</ghost>
 				<ghost type="hardgold">2:34:00</ghost>
 				<ghost type="hardplatin">2:02:00</ghost>
@@ -327,11 +327,11 @@
 				<ghost type="easysapphire">2:40:00</ghost>
 				<ghost type="easygold">2:09:00</ghost>
 				<ghost type="easyplatin">1:37:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">2:35:00</ghost>
 				<ghost type="hardgold">2:04:00</ghost>
 				<ghost type="hardplatin">1:32:00</ghost>
@@ -343,11 +343,11 @@
 				<ghost type="easysapphire">2:20:00</ghost>
 				<ghost type="easygold">1:39:00</ghost>
 				<ghost type="easyplatin">0:58:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">2:15:00</ghost>
 				<ghost type="hardgold">1:34:00</ghost>
 				<ghost type="hardplatin">0:53:00</ghost>
@@ -359,11 +359,11 @@
 				<ghost type="easysapphire">3:22:00</ghost>
 				<ghost type="easygold">3:01:00</ghost>
 				<ghost type="easyplatin">2:39:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire">3:17:00</ghost>
 				<ghost type="hardgold">2:56:00</ghost>
 				<ghost type="hardplatin">2:34:00</ghost>
@@ -377,11 +377,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -393,11 +393,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -409,11 +409,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -425,11 +425,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -441,11 +441,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -457,11 +457,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -473,11 +473,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -489,11 +489,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -505,11 +505,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -521,11 +521,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -537,11 +537,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -553,11 +553,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -569,11 +569,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -587,11 +587,11 @@
 				<ghost type="easysapphire"></ghost>
 				<ghost type="easygold"></ghost>
 				<ghost type="easyplatin"></ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -603,11 +603,11 @@
 				<ghost type="easysapphire">1:35:00</ghost>
 				<ghost type="easygold">2:15:00</ghost>
 				<ghost type="easyplatin">1:50:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
@@ -619,11 +619,27 @@
 				<ghost type="easysapphire">1:40:00</ghost>
 				<ghost type="easygold">1:30:00</ghost>
 				<ghost type="easyplatin">1:23:00</ghost>
-				
+
 				<ghost type="normalsapphire"></ghost>
 				<ghost type="normalgold"></ghost>
 				<ghost type="normalplatin"></ghost>
-				
+
+				<ghost type="hardsapphire"></ghost>
+				<ghost type="hardgold"></ghost>
+				<ghost type="hardplatin"></ghost>
+			</track>
+			<track name="Nina's Nightmare">
+				<ghost type="ntropy">2:17:00</ghost>
+				<ghost type="oxide">1:58:31</ghost>
+
+				<ghost type="easysapphire"></ghost>
+				<ghost type="easygold"></ghost>
+				<ghost type="easyplatin"></ghost>
+
+				<ghost type="normalsapphire">1:13:44</ghost>
+				<ghost type="normalgold">0:57:04</ghost>
+				<ghost type="normalplatin">0:45:47</ghost>
+
 				<ghost type="hardsapphire"></ghost>
 				<ghost type="hardgold"></ghost>
 				<ghost type="hardplatin"></ghost>
