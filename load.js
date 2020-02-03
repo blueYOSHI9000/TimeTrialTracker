@@ -80,8 +80,6 @@ function loadLeaderboard () {
 	}
 
 	var file = xml.querySelector('title').getAttribute('short');
-	var stateObj = {};
-	history.pushState(stateObj, file + ' - Time Trial Tracker', '?game=' + file);
 }
 
 /*

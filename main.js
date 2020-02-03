@@ -1,4 +1,13 @@
 /*
+* Redirects to each files own site.
+*
+* @param {string} file The file to load.
+*/
+function load (file) {
+	location.search = '?game=' + file;
+}
+
+/*
 * Loads presets.
 *
 * @param {string} id The ID of the option activated.
@@ -133,11 +142,6 @@ function getUrl(variable) {
 	}
  	return(false);
 }
-
-//reloads the page when back button is used
-window.addEventListener('popstate', (event) => {
-	location = location;
-});
 
 /*
 * Closes the settings if the user doesn't click on the settings while they are opened.
